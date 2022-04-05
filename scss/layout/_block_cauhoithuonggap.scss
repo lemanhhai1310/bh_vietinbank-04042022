@@ -22,12 +22,14 @@
       top: -11px;
       color: #8592AB;
       @extend .fz-12;
+      font-family: $font-SF-Pro-Display-Regular;
     }
     &__txt{
       color: #2E3A5B;
       @extend .fz-16;
       position: relative;
       top: 9px;
+      font-family: $font-SF-Pro-Display-Regular;
     }
     &__icon{
       right: 10px;
@@ -51,6 +53,7 @@
     line-height: calc(#{$x} - 2px);
     span{
       @extend .fz-16;
+      font-family: $font-SF-Pro-Display-Medium;
     }
     padding: 0 10px;
     width: 100%;

@@ -1,5 +1,24 @@
 /**
  * --------------------------------------------------------------------
+ * SF Pro Display
+ * --------------------------------------------------------------------
+ */
+@font-face{
+  font-family:'SF Pro Display Regular';
+  font-display: auto;
+  src:local('SF Pro Display Regular'), url('fonts/SF-Pro-Display-Regular.otf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'SF Pro Display Medium';
+  font-display: auto;
+  src:local('SF Pro Display Medium'), url('fonts/SF-Pro-Display-Medium.otf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+/**
+ * --------------------------------------------------------------------
  * Arial
  * --------------------------------------------------------------------
  */
