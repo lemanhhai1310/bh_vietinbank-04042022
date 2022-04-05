@@ -51,6 +51,7 @@
   &__#{$x}{
     &:nth-child(n+2){
       margin-top: #{$x}px;
+      .block_taiapp__gradient &,
       .block_cauhoithuonggap__section &{
         margin-top: 24px;
         @include media-breakpoint-up('m'){

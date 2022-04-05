@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css" />
-    <link rel="stylesheet" href="style.css?v=1649176105">
+    <link rel="stylesheet" href="style.css?v=1649177761">
     <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
-    <script src="js/app.js?v=1649176105"></script>
+    <script src="js/app.js?v=1649177761"></script>
 </head>
 <body class="">
 <!-- Load Facebook SDK for JavaScript -->
@@ -46,14 +46,52 @@
         }(document, 'script', 'facebook-jssdk'));
     }, 5000);
 </script><!--app-->
-<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative"><div class="block_taiapp__section uk-light">
-    <div class="uk-section uk-background-norepeat uk-background-cover" data-src="images/MaskGroup.png" uk-img>
+<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative"><div class="block_taiapp__gradient uk-light uk-overflow-hidden">
+    <div class="block_taiapp__section uk-section uk-background-norepeat uk-background-cover" data-src="images/MaskGroup.png" uk-img>
         <div class="uk-container">
             <div class="item__32">
                 <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Tải ứng ụng app MyVBI</h2>
             </div>
             <div class="item__32">
-
+                <div uk-grid>
+                    <div class="uk-width-expand">
+                        <div class="">
+                            <div class="item__32">
+                                <div class="item__16">
+                                    <div class="block_taiapp__name">Tại sao bạn cần tải app My VBI?</div>
+                                </div>
+                                <div class="item__16">
+                                    <ul class="uk-list block_taiapp__list">
+                                        <li class="block_taiapp__list__li">Hỗ trợ bạn mọi nơi và mọi lúc</li>
+                                        <li class="block_taiapp__list__li">Lưu trữ tất cả chính sách bảo hiểm</li>
+                                        <li class="block_taiapp__list__li">Các tiện ích giúp bạn trong cuộc sống</li>
+                                        <li class="block_taiapp__list__li">Chủ động khai báo và theo dõi tiến trình xử lý online</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item__32">
+                                <div class="uk-flex-middle uk-grid-medium" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <img src="images/qrcode.png" alt="">
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <div class="uk-flex-middle uk-child-width-auto@s uk-grid-small" uk-grid>
+                                            <div>
+                                                <a href=""><img src="images/googleplay.png" alt=""></a>
+                                            </div>
+                                            <div>
+                                                <a href=""><img src="images/appstore.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-auto@m uk-visible@m">
+                        <img uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true" src="images/intro_app.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -1,5 +1,47 @@
 .block_taiapp{
-  &__section{
+  &__gradient{
     background: linear-gradient(98.11deg, #0062AF -13.17%, #DD005D 125.32%);
+  }
+  &__section{
+    @include media-breakpoint-up('m'){
+      padding-bottom: 0;
+    }
+  }
+  &__name{
+    @extend .fz-24;
+    font-family: $font-Roboto-Medium;
+    line-height: 1.33;
+  }
+  &__list{
+    counter-reset: section;
+    &__li{
+      @extend .fz-20;
+      position: relative;
+      padding-left: 35px;
+      @include media-breakpoint-up('m'){
+        padding-left: 45px;
+      }
+      &:before{
+        counter-increment: section;
+        content: counter(section);
+        background: #FFFFFF;
+        color: #505AA3;
+        width: 28px;
+        height: 28px;
+        @extend .fz-20;
+        @include media-breakpoint-up('m'){
+          width: 33px;
+          height: 33px;
+        }
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
   }
 }
