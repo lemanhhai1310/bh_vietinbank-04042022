@@ -16,7 +16,7 @@
                         </ul>
                     </div>
                     <div class="uk-hidden@m">
-                        <div uk-form-custom="target: > * > span:first-child">
+                        <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
                             <select>
                                 <option value="1">Bảo hiểm sức khoẻ</option>
                                 <option value="2">Câu hỏi về bảo hiểm xe</option>
