@@ -39,12 +39,24 @@
   &__#{$x}{
     &:nth-child(n+2){
       margin-top: #{$x}px;
+      .block_cauhoithuonggap__section &{
+        margin-top: 24px;
+        @include media-breakpoint-up('m'){
+          margin-top: #{$x}px;
+        }
+      }
     }
   }
   $x:32;
   &__#{$x}{
     &:nth-child(n+2){
       margin-top: #{$x}px;
+      .block_cauhoithuonggap__section &{
+        margin-top: 24px;
+        @include media-breakpoint-up('m'){
+          margin-top: #{$x}px;
+        }
+      }
     }
   }
   $x:30;

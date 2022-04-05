@@ -2,6 +2,36 @@
   &__section{
 
   }
+  &__btnOption{
+    text-transform: inherit;
+    $x:52px;
+    line-height: calc(#{$x} - 2px);
+    background: #FFFFFF;
+    /* Ink/200 */
+
+    border: 1px solid #DBE0E6;
+    box-sizing: border-box;
+    border-radius: 8px;
+    min-width: 339px;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    &__small{
+      left: 15px;
+      top: -12px;
+      color: #8592AB;
+      @extend .fz-12;
+    }
+    &__txt{
+      color: #2E3A5B;
+      @extend .fz-16;
+      position: relative;
+      top: 7px;
+    }
+    &__icon{
+      right: 10px;
+    }
+  }
   &__title{
     color: #2E3A5B;
     @extend .fz-30;

@@ -4,10 +4,10 @@
             <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Câu hỏi thường gặp</h2>
         </div>
         <div class="item__32">
-            <div class="uk-grid-small" uk-grid>
+            <div class="uk-grid-small" uk-grid="">
                 <div class="uk-width-1-3@m">
                     <div class="uk-padding-small block_cauhoithuonggap__card uk-visible@m">
-                        <ul class="block_cauhoithuonggap__nav uk-nav-default uk-nav-divider" uk-nav>
+                        <ul class="block_cauhoithuonggap__nav uk-nav-default uk-nav-divider" uk-nav="">
                             <li class="block_cauhoithuonggap__nav__li uk-active"><a class="block_cauhoithuonggap__nav__a" href="#">Câu hỏi về bảo hiểm sức khỏe</a></li>
                             <li class="block_cauhoithuonggap__nav__li"><a class="block_cauhoithuonggap__nav__a" href="#">Câu hỏi về bảo hiểm xe</a></li>
                             <li class="block_cauhoithuonggap__nav__li"><a class="block_cauhoithuonggap__nav__a" href="#">Câu hỏi về bảo hiểm khác</a></li>
@@ -16,12 +16,25 @@
                         </ul>
                     </div>
                     <div class="uk-hidden@m">
-
+                        <div uk-form-custom="target: > * > span:first-child">
+                            <select>
+                                <option value="1">Bảo hiểm sức khoẻ</option>
+                                <option value="2">Câu hỏi về bảo hiểm xe</option>
+                                <option value="3">Câu hỏi về bảo hiểm khác</option>
+                                <option value="4">Câu hỏi về bồi thường</option>
+                                <option value="5">Câu hỏi về tái tục</option>
+                            </select>
+                            <button class="block_cauhoithuonggap__btnOption uk-button uk-button-default uk-position-relative" type="button" tabindex="-1">
+                                <span class="block_cauhoithuonggap__btnOption__txt"></span>
+                                <small class="block_cauhoithuonggap__btnOption__small uk-position-top-left">Câu hỏi về</small>
+                                <span class="block_cauhoithuonggap__btnOption__icon uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="uk-width-expand">
                     <div class="item__40">
-                        <ul uk-accordion>
+                        <ul uk-accordion="">
                             <li class="block_cauhoithuonggap__accordion__li uk-open">
                                 <a class="uk-accordion-title block_cauhoithuonggap__accordion__title" href="#">1. Hợp đồng bảo hiểm sẽ được gửi đến khách hàng như thế nào</a>
                                 <div class="uk-accordion-content block_cauhoithuonggap__accordion__content">
