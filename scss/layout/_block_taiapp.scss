@@ -15,6 +15,11 @@
   &__list{
     counter-reset: section;
     &__li{
+      &:nth-child(n+2){
+        @include media-breakpoint-up('m'){
+          margin-top: 16px !important;
+        }
+      }
       @extend .fz-20;
       position: relative;
       padding-left: 35px;
