@@ -1,0 +1,41 @@
+.cocauquantri{
+  &__section1{
+    padding-bottom: 32px;
+  }
+  &__navbar{
+    background-color: #F4F5F6 !important;
+    &__navItem{
+      min-height: 59px;
+    }
+    .uk-navbar-item{
+      @extend .cocauquantri__navbar__navItem;
+    }
+    .uk-navbar-nav{
+      >li{
+        >a{
+          text-transform: inherit;
+          color: #596481;
+          font-family: $font-Roboto-Medium;
+          @extend .fz-16;
+          @include media-breakpoint-up('m'){
+            padding: 0 30px;
+          }
+          &:hover{
+            color: #FF61A3;
+          }
+        }
+        &.uk-active{
+          >a{
+            color: #FF61A3;
+          }
+        }
+      }
+    }
+  }
+  &__section2{
+    @include media-breakpoint-up('m'){
+      padding-top: 32px;
+      padding-bottom: 104px;
+    }
+  }
+}

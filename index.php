@@ -1,6 +1,7 @@
 <?php $data["title"] = "01. Trang chủ"; ?>
 <?php $home = true; ?>
 <?php require "template-parts/layouts/header.php"; ?>
+<!--Sản phẩm bảo hiểm được khách hàng quan tâm tại VBI-->
 <div class="home__block01__bg uk-background-image@m uk-flex uk-flex-middle">
     <div class="uk-width-1-1 uk-section">
         <div class="uk-container uk-container-small">
@@ -79,6 +80,69 @@
         </div>
     </div>
 </div>
+<!--/Sản phẩm bảo hiểm được khách hàng quan tâm tại VBI-->
+<!--Bạn muốn bảo vệ gì hôm nay ?-->
+<div class="uk-section home__block02__section">
+    <div class="uk-container">
+        <div class="item__32">
+            <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Bạn muốn bảo vệ gì hôm nay ?</h2>
+        </div>
+        <div class="item__32">
+            <div class="item__16">
+                <div class="home__block02__title">Bảo vệ bạn và gia đình</div>
+            </div>
+            <div class="item__16">
+                <div uk-slider>
+
+                    <div class="uk-position-relative">
+
+                        <div class="uk-slider-container uk-light">
+                            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-small" uk-grid>
+                                <?php
+                                $data = array(
+                                    array(
+                                        'src' => '',
+                                        'txt' => '',
+                                    ),
+                                );
+                                foreach ($data as $k=>$v): ?>
+                                <li>
+                                    <div class="uk-padding-small">
+
+                                    </div>
+                                </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+
+                        <div class="uk-hidden@s uk-light">
+                            <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                        </div>
+
+                        <div class="uk-visible@s">
+                            <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                        </div>
+
+                    </div>
+
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin uk-hidden"></ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="item__32">
+            <div class="item__16">
+                <div class="home__block02__title">Bảo vệ doanh nghiệp của bạn</div>
+            </div>
+            <div class="item__16">
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--/Bạn muốn bảo vệ gì hôm nay ?-->
 <?php require "template-parts/layouts/block_danhgiakhachhangdoitac.php"; ?>
 <?php require "template-parts/layouts/block_taiapp.php"; ?>
 <?php require "template-parts/layouts/block_cauhoithuonggap.php"; ?>

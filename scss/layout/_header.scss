@@ -1,6 +1,9 @@
 .header{
   &__top{
     border-bottom: 1px solid #F4F5F6;
+    .uk-container{
+      max-width: calc(1200px + 30px);
+    }
     .uk-navbar-item{
       min-height: 48px;
     }
@@ -39,6 +42,9 @@
   }
   &__bottom{
     background-color: #fff;
+    .uk-container{
+      max-width: calc(1200px + 30px);
+    }
     .not_home &{
       border-bottom: 1px solid #DEDEDE;
     }

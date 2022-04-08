@@ -50,9 +50,9 @@
             <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav">
                     <li class="uk-active"><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Công ty</a></li>
+                    <li><a href="congty_about.php">Công ty</a></li>
                     <li><a href="#">Sản phẩm</a></li>
-                    <li><a href="#">Bồi thường</a></li>
+                    <li><a href="boithuong.php">Bồi thường</a></li>
                     <li><a href="#">Gia hạn hợp đồng</a></li>
                 </ul>
                 <div class="uk-navbar-item">

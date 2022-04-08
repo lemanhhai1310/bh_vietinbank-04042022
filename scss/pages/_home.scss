@@ -40,4 +40,14 @@
       }
     }
   }
+  &__block02{
+    &__section{
+      border-top: 1px solid #DBE0E6;
+    }
+    &__title{
+      color: #2E3A5B;
+      @extend .fz-20;
+      line-height: 1.4;
+    }
+  }
 }
