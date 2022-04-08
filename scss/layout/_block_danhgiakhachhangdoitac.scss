@@ -1,0 +1,40 @@
+.block_danhgiakhachhangdoitac{
+  &__section{
+    @include media-breakpoint-up('m'){
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  }
+  &__txt{
+    color: #596481;
+    line-height: 1.4;
+    @extend .fz-20;
+  }
+  &__boxBrand{
+    width: 118px !important;
+    min-height: 60px;
+    border: 0.929018px solid #DBE0E6;
+    box-sizing: border-box;
+    .block_danhgiakhachhangdoitac__column:first-child &{
+      margin-left: 15px;
+      @include media-breakpoint-up('m'){
+        margin-left: 0;
+      }
+    }
+    .block_danhgiakhachhangdoitac__column:last-child &{
+      margin-right: 15px;
+      @include media-breakpoint-up('m'){
+        margin-right: 0;
+      }
+    }
+  }
+  &__grid{
+    width: -webkit-fill-available;
+    &::-webkit-scrollbar{
+      display: none;
+    }
+  }
+  &__column{
+
+  }
+}

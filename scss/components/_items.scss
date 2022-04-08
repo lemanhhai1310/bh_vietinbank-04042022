@@ -21,6 +21,12 @@
   &__#{$x}{
     &:nth-child(n+2){
       margin-top: #{$x}px;
+      .block_danhgiakhachhangdoitac__section &{
+        margin-top: 29px;
+        @include media-breakpoint-up('m'){
+          margin-top: #{$x}px;
+        }
+      }
     }
   }
   $x:50;
@@ -85,6 +91,12 @@
     }
   }
   $x:15;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+  $x:14;
   &__#{$x}{
     &:nth-child(n+2){
       margin-top: #{$x}px;
