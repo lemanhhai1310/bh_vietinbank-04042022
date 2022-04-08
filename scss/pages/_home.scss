@@ -1,0 +1,43 @@
+.home{
+  &__block01{
+    &__bg{
+      background:
+              url("images/bg_left.png") no-repeat top left,
+              url("images/bg_right.png") no-repeat top right;
+      min-height: 648px;
+      .uk-container-small{
+        max-width: 796px;
+      }
+    }
+    &__box{
+
+    }
+    &__box1{
+      border: 1px solid #DBE0E6;
+      box-sizing: border-box;
+      border-radius: 4px;
+      .home__block01__box:hover &{
+        border-color: #EF5DA8;
+      }
+    }
+    &__sale{
+      @extend .fz-16;
+      font-family: $font-Roboto-Medium;
+      color: #ffffff;
+      background: #FF61A3;
+      border-radius: 0px 0px 0px 4px;
+      width: 42px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__txt{
+      @extend .fz-16;
+      line-height: 1.25;
+      a{
+        color: #596481;
+      }
+    }
+  }
+}

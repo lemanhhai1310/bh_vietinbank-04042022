@@ -1,7 +1,84 @@
 <?php $data["title"] = "01. Trang chủ"; ?>
 <?php $home = true; ?>
 <?php require "template-parts/layouts/header.php"; ?>
+<div class="home__block01__bg uk-background-image@m uk-flex uk-flex-middle">
+    <div class="uk-width-1-1 uk-section">
+        <div class="uk-container uk-container-small">
+            <div class="item__32">
+                <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Sản phẩm bảo hiểm được khách hàng quan tâm tại VBI</h2>
+            </div>
+            <div class="item__32">
+                <div class="uk-child-width-expand@m uk-grid-small" uk-grid>
+                    <?php
+                    $data = array(
+                        array(
+                            'src' => 'images/sanpham/family.png',
+                            'txt' => 'Bảo hiểm Sức khỏe',
+                        ),
+                        array(
+                            'src' => 'images/sanpham/trachnhiemdansu.png',
+                            'txt' => 'Bảo hiểm TNDS xe máy',
+                        ),
+                        array(
+                            'src' => 'images/sanpham/Group7766.png',
+                            'txt' => 'Bảo hiểm TNDS ô tô',
+                        ),
+                        array(
+                            'src' => 'images/sanpham/medical-report2.png',
+                            'txt' => 'Bảo hiểm bệnh hiểm nghèo',
+                        ),
+                        array(
+                            'src' => 'images/sanpham/Frame7288.png',
+                            'txt' => 'Bảo hiểm nhà tư nhân',
+                        ),
+                        array(
+                            'src' => 'images/sanpham/magnifying-glass1.png',
+                            'txt' => 'Tìm sản phẩm khác',
+                        ),
+                    );
+                    foreach ($data as $k=>$v): ?>
+                    <div>
+                        <div class="uk-text-center home__block01__box">
+                            <div class="home__block01__box1 uk-cover-container item__16 uk-background-norepeat uk-background-center-center" data-src="<?= $v['src'] ?>" uk-img>
+                                <canvas width="120" height="120"></canvas>
+                                <?php if ($k == 3): ?>
+                                <span class="uk-position-top-right home__block01__sale">-20%</span>
+                                <?php endif; ?>
+                            </div>
+                            <div class="item__16">
+                                <div class="home__block01__txt"><a href=""><?= $v['txt'] ?></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+            <div class="item__32">
+                <div uk-slider="autoplay: true">
 
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                        <ul class="uk-slider-items uk-child-width-1-1">
+                            <li>
+                                <img src="images/banner1.png" alt="">
+                            </li>
+                            <li>
+                                <img src="images/banner1.png" alt="">
+                            </li>
+                        </ul>
+
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+                    </div>
+
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin-small"></ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <?php require "template-parts/layouts/block_danhgiakhachhangdoitac.php"; ?>
 <?php require "template-parts/layouts/block_taiapp.php"; ?>
 <?php require "template-parts/layouts/block_cauhoithuonggap.php"; ?>

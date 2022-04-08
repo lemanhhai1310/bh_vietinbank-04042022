@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="uk-width-auto@m uk-visible@m">
-                        <img uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true" src="images/intro_app.png" alt="">
+                        <img uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false" src="images/intro_app.png" alt="">
                     </div>
                 </div>
             </div>
