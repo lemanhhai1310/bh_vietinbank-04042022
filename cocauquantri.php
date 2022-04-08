@@ -41,4 +41,9 @@ require "template-parts/layouts/breadcrumb.php"; ?>
 
     </div>
 </div>
+<div class="cocauquantri__section3">
+    <div class="uk-container">
+
+    </div>
+</div>
 <?php require "template-parts/layouts/footer.php"; ?>
