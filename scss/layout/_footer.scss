@@ -1,5 +1,33 @@
 .footer{
   background: #333333;
+  &__title1{
+    color: #FFFFFF;
+    @extend .fz-16;
+    line-height: 1.5;
+  }
+  &__title2{
+    @extend .fz-20;
+    font-family: $font-Roboto-Medium;
+    color: #ffffff;
+  }
+  &__title3{
+    @extend .fz-16;
+    line-height: 1.5;
+    font-family: $font-Roboto-Medium;
+    color: #ffffff;
+  }
+  &__nav{
+    >li{
+      >a{
+        @extend .fz-16;
+      }
+    }
+  }
+  &__w1{
+    @include media-breakpoint-up('m'){
+      width: 350px;
+    }
+  }
   &__listAddress{
     &__li{
       color: #E3E3E3;
