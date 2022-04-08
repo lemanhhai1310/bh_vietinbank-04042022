@@ -18,7 +18,57 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
     <script src="js/app.js?v=<?php echo(time()) ?>"></script>
 </head>
-<body class="<?= (isset($body))?$body:'' ?>">
+<body class="<?= (isset($home) && $home)?'':'not_home' ?>">
 <?php require "template-parts/commons/facebook_chat.php"; ?>
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+<?php if (isset($home) && $home): ?>
+    <div class="header__top">
+        <div class="uk-container">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-right">
+                    <div class="uk-navbar-item header__top__hotline">
+                        <div>Hotline: 1900.1566</div>
+                    </div>
+                    <a href="" class="uk-navbar-item">
+                        <span class="header__top__cartIcon"></span>
+                    </a>
+                    <div class="uk-navbar-item">
+                        <a href="" class="header__top__btnLogin uk-button uk-button-default uk-border-pill"><span>Đăng nhập</span></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+<?php endif; ?>
+<div class="header__bottom" uk-sticky>
+    <div class="uk-container uk-padding-remove">
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+            <div class="uk-navbar-left">
+                <a href="" class="uk-navbar-item uk-logo"><img class="header__bottom__logoImg" src="images/logo.png" alt=""></a>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Công ty</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Bồi thường</a></li>
+                    <li><a href="#">Gia hạn hợp đồng</a></li>
+                </ul>
+                <div class="uk-navbar-item">
+                    <a href="#" class="header__bottom__txtUnderline">Trở thành đại lý</a>
+                </div>
+                <?php if (isset($home) && $home): ?>
+
+                <?php else: ?>
+                    <a href="" class="uk-navbar-item">
+                        <span class="header__top__cartIcon"></span>
+                    </a>
+                    <div class="uk-navbar-item">
+                        <a href="" class="header__top__btnLogin uk-button uk-button-default uk-border-pill"><span>Đăng nhập</span></a>
+                    </div>
+                <?php endif; ?>
+            </div>
+        </nav>
+    </div>
+</div>

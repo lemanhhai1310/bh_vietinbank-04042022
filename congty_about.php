@@ -1,5 +1,6 @@
-<?php $data["title"] = "01. Trang chủ"; ?>
-<?php $home = true; ?>
+<?php $data["title"] = "01. Công ty - Giới thiệu"; ?>
+<?php $body = '' ?>
+<?php $home = false; ?>
 <?php require "template-parts/layouts/header.php"; ?>
 
 <?php require "template-parts/layouts/block_danhgiakhachhangdoitac.php"; ?>
