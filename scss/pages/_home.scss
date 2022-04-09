@@ -49,5 +49,18 @@
       @extend .fz-20;
       line-height: 1.4;
     }
+    &__w7{
+      @include media-breakpoint-up('m'){
+        width: calc((100% - 0px)/7);
+      }
+    }
+    &__box{
+      background: #FFFFFF;
+      /* Ink/200 */
+
+      border: 1px solid #DBE0E6;
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
   }
 }
