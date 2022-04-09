@@ -401,13 +401,54 @@
 </div>
 <!--/Tin tức về VBI-->
 <!--Vì sao chọn VBI?-->
-<div class="uk-section uk-background-muted">
+<div class="home__blockVisao__section uk-section uk-background-muted">
     <div class="uk-container">
         <div class="item__32">
             <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Vì sao chọn VBI?</h2>
         </div>
         <div class="item__32">
-
+            <div class="uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
+                <div>
+                    <div class="home__blockVisao__box uk-flex uk-flex-column uk-text-center">
+                        <div class="item__8 uk-flex-auto uk-flex uk-flex-middle uk-flex-center">
+                            <img src="images/visao/img1.png" alt="">
+                        </div>
+                        <div class="item__8">
+                            <div class="home__blockVisao__txt">Mua bảo hiểm trong 1 phút</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="home__blockVisao__box uk-flex uk-flex-column uk-text-center">
+                        <div class="item__8 uk-flex-auto uk-flex uk-flex-middle uk-flex-center">
+                            <img src="images/visao/img2.png" alt="">
+                        </div>
+                        <div class="item__8">
+                            <div class="home__blockVisao__txt">Bồi thường siêu tốc</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="home__blockVisao__box uk-flex uk-flex-column uk-text-center">
+                        <div class="item__8 uk-flex-auto uk-flex uk-flex-middle uk-flex-center">
+                            <img src="images/visao/img3.png" alt="">
+                        </div>
+                        <div class="item__8">
+                            <div class="home__blockVisao__txt">Giám định online 100%</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="home__blockVisao__box uk-flex uk-flex-column uk-text-center">
+                        <div class="item__8 uk-flex-auto uk-flex uk-flex-middle uk-flex-center">
+                            <img src="images/visao/img4.png" alt="">
+                        </div>
+                        <div class="item__8">
+                            <div class="home__blockVisao__txt">Chăm sóc khách hàng 24/7</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
