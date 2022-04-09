@@ -5,4 +5,13 @@
     background-position: bottom center;
     min-height: 361px;
   }
+  &__sectionChitiet{
+    .uk-container-small{
+      max-width: 797px;
+    }
+    @include media-breakpoint-up('m'){
+      padding-bottom: 104px;
+      padding-top: 40px;
+    }
+  }
 }
