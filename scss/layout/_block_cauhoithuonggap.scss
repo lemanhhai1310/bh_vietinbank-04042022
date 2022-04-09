@@ -39,6 +39,9 @@
     color: #2E3A5B;
     @extend .fz-30;
     line-height: (38/30);
+    .tintuc__block01 &{
+      margin-top: -80px;
+    }
   }
   &__txt{
     color: #596481;
