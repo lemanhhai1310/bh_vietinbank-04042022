@@ -63,4 +63,43 @@
       border-radius: 4px;
     }
   }
+  &__blockNews{
+    &__section{
+
+    }
+    &__card{
+      background: #FFFFFF;
+      /* Ink/200 */
+
+      border: 1px solid #DBE0E6;
+      box-sizing: border-box;
+      border-radius: 8px;
+      &__title{
+        color: #2E3A5B;
+        @extend .fz-16;
+        font-family: $font-Roboto-Medium;
+        a{
+          color: #2E3A5B;
+        }
+      }
+      &__time{
+        color: #8592AB;
+        @extend .fz-14;
+        margin-top: 8px;
+      }
+    }
+    &__item{
+      &:nth-child(n+2){
+        border-top: 1px solid #DBE0E6;
+        $x:40px;
+        margin-top: #{$x};
+        padding-top: #{$x};
+        @include media-breakpoint-up('m'){
+          $x:80px;
+          margin-top: #{$x};
+          padding-top: #{$x};
+        }
+      }
+    }
+  }
 }

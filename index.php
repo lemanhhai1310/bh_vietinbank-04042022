@@ -343,6 +343,75 @@
     </div>
 </div>
 <!--/Tiện ích 24/7-->
+<!--Tin tức về VBI-->
+<div class="uk-section home__blockNews__section">
+    <div class="uk-container">
+        <div class="home__blockNews__item">
+            <div class="item__32">
+                <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Tin tức về VBI</h2>
+            </div>
+            <div class="item__32">
+                <div class="uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
+                    <?php for ($i=0;$i<=3;$i++): ?>
+                    <div>
+                        <div class="home__blockNews__card uk-card uk-flex uk-flex-column">
+                            <div class="uk-cover-container">
+                                <img src="https://znews-photo.zingcdn.me/w960/Uploaded/rotntv/2022_04_01/2600x_1_2.jpeg" alt="" uk-cover="">
+                                <canvas width="287" height="166"></canvas>
+                            </div>
+                            <div class="uk-flex-auto uk-padding-small">
+                                <div class="home__blockNews__card__title"><a href="">VBI Nghệ An Chi Trả 300 Triệu Đồng Bảo Hiểm Người Vay Vốn</a></div>
+                                <div class="home__blockNews__card__time">09:03 20/01/2022</div>
+                            </div>
+                        </div>
+                    </div>
+                    <?php endfor; ?>
+                </div>
+            </div>
+            <div class="item__32 uk-text-center">
+                <button class="block_cauhoithuonggap__btn uk-button uk-button-default uk-border-pill"><span>Xem thêm</span></button>
+            </div>
+        </div>
+        <div class="home__blockNews__item">
+            <div class="item__32">
+                <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Ưu đãi từ đối tác</h2>
+            </div>
+            <div class="item__32">
+                <div class="uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
+                    <?php for ($i=0;$i<=3;$i++): ?>
+                        <div>
+                            <div class="home__blockNews__card uk-card uk-flex uk-flex-column">
+                                <div class="uk-cover-container">
+                                    <img src="https://znews-photo.zingcdn.me/w960/Uploaded/rotntv/2022_04_01/2600x_1_2.jpeg" alt="" uk-cover="">
+                                    <canvas width="287" height="166"></canvas>
+                                </div>
+                                <div class="uk-flex-auto uk-padding-small">
+                                    <div class="home__blockNews__card__title"><a href="">VBI Nghệ An Chi Trả 300 Triệu Đồng Bảo Hiểm Người Vay Vốn</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endfor; ?>
+                </div>
+            </div>
+            <div class="item__32 uk-text-center">
+                <button class="block_cauhoithuonggap__btn uk-button uk-button-default uk-border-pill"><span>Xem thêm</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/Tin tức về VBI-->
+<!--Vì sao chọn VBI?-->
+<div class="uk-section uk-background-muted">
+    <div class="uk-container">
+        <div class="item__32">
+            <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Vì sao chọn VBI?</h2>
+        </div>
+        <div class="item__32">
+
+        </div>
+    </div>
+</div>
+<!--/Vì sao chọn VBI?-->
 <?php require "template-parts/layouts/block_danhgiakhachhangdoitac.php"; ?>
 <?php require "template-parts/layouts/block_taiapp.php"; ?>
 <?php require "template-parts/layouts/block_cauhoithuonggap.php"; ?>
