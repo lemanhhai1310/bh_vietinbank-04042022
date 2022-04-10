@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -9,14 +10,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css" />
-    <link rel="stylesheet" href="style.css?v=1649441683">
+    <link rel="stylesheet" href="style.css?v=1649578963">
     <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
-    <script src="js/app.js?v=1649441683"></script>
+    <script src="js/app.js?v=1649578963"></script>
 </head>
 <body class="not_home">
 <!-- Load Facebook SDK for JavaScript -->
@@ -56,9 +57,9 @@
                 <div class="uk-navbar-right">
                     <ul class="uk-navbar-nav">
                         <li class="uk-active"><a href="#">Trang chủ</a></li>
-                        <li><a href="#">Công ty</a></li>
+                        <li><a href="congty_about.php">Công ty</a></li>
                         <li><a href="#">Sản phẩm</a></li>
-                        <li><a href="#">Bồi thường</a></li>
+                        <li><a href="boithuong.php">Bồi thường</a></li>
                         <li><a href="#">Gia hạn hợp đồng</a></li>
                     </ul>
                     <div class="uk-navbar-item">
@@ -74,7 +75,238 @@
             </nav>
         </div>
     </div>
-
+    <!--breadcrumb-->
+    <div class="uk-section-xsmall uk-overflow-auto breadcrumb__section" uk-sticky="offset: 60;media:(max-width: 959px)">
+        <div class="uk-container uk-padding-remove">
+            <ul class="uk-breadcrumb uk-flex uk-flex-nowrap">
+                <li><a href=".">Trang chủ</a></li>
+                <li><a href="">Công ty</a></li>
+                <li><span>Giới thiệu VBI</span></li>
+            </ul>
+        </div>
+    </div>
+    <!--/breadcrumb--><div class="about__section1 uk-background-norepeat uk-flex uk-flex-middle uk-background-center-center">
+    <div class="uk-width-1-1 uk-section-xsmall">
+        <div class="uk-container">
+            <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Bảo toàn giá trị cuộc sống</h2>
+        </div>
+    </div>
+</div>
+    <nav class="uk-navbar-container cocauquantri__navbar" uk-navbar>
+        <div class="uk-navbar-left">
+            <a href="" class="uk-navbar-item"></a>
+        </div>
+        <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="#">Giới thiệu VBI</a></li>
+                <li class=""><a href="#">Nhà đầu tư</a></li>
+                <li class=""><a href="#">Cơ cấu quản trị</a></li>
+                <li class=""><a href="#">Giải thưởng</a></li>
+            </ul>
+        </div>
+    </nav><div id="modal-media-youtube" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-width-3-5@m uk-margin-auto-vertical">
+        <button class="uk-modal-close-outside" type="button" uk-close></button>
+        <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA" width="1920" height="1080" uk-video uk-responsive></iframe>
+    </div>
+</div>
+    <div class="uk-section-small about__section2">
+        <div class="uk-container">
+            <div class="about__section2__item">
+                <div class="uk-flex-middle" uk-grid>
+                    <div class="uk-width-expand">
+                        <article class="about__section2__content uk-article">
+                            <h3 class="uk-h3 about__section2__content__title">Tổng công ty cổ phần Bảo hiểm <br class="uk-visible@m">
+                                Ngân hàng TMCP Công Thương Việt Nam</h3>
+                            <p>Tổng công ty cổ phần Bảo hiểm Ngân hàng TMCP Công Thương Việt Nam (Bảo hiểm VietinBank) tiền thân là Công ty TNHH MTV Bảo hiểm Ngân hàng TMCP Công Thương Việt Nam.</p>
+                            <p>Trải qua chặng đường 10 năm hình thành và phát triển (từ 2008 đến nay) với định hướng là một công ty bảo hiểm vì giá trị nhân văn và mục tiêu dẫn đầu phân khúc bán lẻ trên thị trường bảo hiểm Việt Nam, Bảo hiểm VietinBank được nhiều khách hàng tin dùng bởi những cam kết chiến lược: dịch vụ khách hàng tốt, tăng trưởng mạnh, mang lại giá trị tốt đẹp cho cộng đồng.</p>
+                        </article>
+                    </div>
+                    <div class="uk-width-auto@m">
+                        <div class="item__10 uk-cover-container about__section2__boxVideo">
+                            <canvas width="532" height="355"></canvas>
+                            <div class="uk-position-cover uk-flex uk-flex-middle uk-flex-center">
+                                <img src="images/about/bg_video.png" alt="">
+                            </div>
+                            <a href="#modal-media-youtube" uk-toggle class="about__section2__boxVideo__iconPlay uk-position-center"></a>
+                        </div>
+                        <div class="item__10 uk-text-center">Xem câu chuyện về VBI</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about__section2__item">
+                <div class="item__32">
+                    <div class="about__section2__content__title uk-text-center">Lịch sử hình thành và phát triển</div>
+                </div>
+                <div class="item__32">
+                    <div class="about__section2__history__subtract">
+                        <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-match uk-grid-row-large" uk-grid>
+                            <div class="about__section2__history__column">
+                                <div class="about__section2__history__box uk-text-center">
+                                    <div class="item__24">
+                                        <div class="about__section2__history__img uk-display-inline-block uk-cover-container uk-border-circle">
+                                            <canvas width="104" height="104"></canvas>
+                                            <div class="uk-position-cover uk-flex uk-flex-middle uk-flex-center">
+                                                <img src="images/about/statistics1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item__24">
+                                        <div class="item__8">
+                                            <div class="about__section2__history__year">2008 </div>
+                                        </div>
+                                        <div class="item__8">
+                                            <div class="about__section2__history__txt">Chuyển đổi mô hình thành Công ty TNHH MTV Bảo hiểm Ngân hàng TMCP Công thương Việt Nam trực thuộc 100% vốn Ngân hàng TMCP Công thương Việt Nam.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about__section2__history__column">
+                                <div class="about__section2__history__box uk-text-center">
+                                    <div class="item__24">
+                                        <div class="about__section2__history__img uk-display-inline-block uk-cover-container uk-border-circle">
+                                            <canvas width="104" height="104"></canvas>
+                                            <div class="uk-position-cover uk-flex uk-flex-middle uk-flex-center">
+                                                <img src="images/about/crosshair1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item__24">
+                                        <div class="item__8">
+                                            <div class="about__section2__history__year">2013</div>
+                                        </div>
+                                        <div class="item__8">
+                                            <div class="about__section2__history__txt">Xây dựng thành công mô hình bảo hiểm ngân hàng, cung cấp các sản phẩm bảo hiểm qua mạng lưới ngân hàng (hơn 155 chi nhánh và hơn 1000 điểm giao dịch).</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about__section2__history__column">
+                                <div class="about__section2__history__box uk-text-center">
+                                    <div class="item__24">
+                                        <div class="about__section2__history__img uk-display-inline-block uk-cover-container uk-border-circle">
+                                            <canvas width="104" height="104"></canvas>
+                                            <div class="uk-position-cover uk-flex uk-flex-middle uk-flex-center">
+                                                <img src="images/about/badge11.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item__24">
+                                        <div class="item__8">
+                                            <div class="about__section2__history__year">2015</div>
+                                        </div>
+                                        <div class="item__8">
+                                            <div class="about__section2__history__txt">Lọt Top 500 công ty có tốc độ tăng trưởng nhanh nhất.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about__section2__history__column">
+                                <div class="about__section2__history__box uk-text-center">
+                                    <div class="item__24">
+                                        <div class="about__section2__history__img uk-display-inline-block uk-cover-container uk-border-circle">
+                                            <canvas width="104" height="104"></canvas>
+                                            <div class="uk-position-cover uk-flex uk-flex-middle uk-flex-center">
+                                                <img src="images/about/certificate21.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item__24">
+                                        <div class="item__8">
+                                            <div class="about__section2__history__year">2016</div>
+                                        </div>
+                                        <div class="item__8">
+                                            <div class="about__section2__history__txt">Phát hành giấy chứng nhận điện tử và hóa đơn điện tử.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about__section2__history__column">
+                                <div class="about__section2__history__box uk-text-center">
+                                    <div class="item__24">
+                                        <div class="about__section2__history__img uk-display-inline-block uk-cover-container uk-border-circle">
+                                            <canvas width="104" height="104"></canvas>
+                                            <div class="uk-position-cover uk-flex uk-flex-middle uk-flex-center">
+                                                <img src="images/about/teamwork1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item__24">
+                                        <div class="item__8">
+                                            <div class="about__section2__history__year">2017</div>
+                                        </div>
+                                        <div class="item__8">
+                                            <div class="about__section2__history__txt">Chuyển đổi mô hình thành Tổng Công ty Cổ phần Bảo hiểm VietinBank, gia nhập câu lạc bộ những doanh nghiệp nghìn tỷ.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about__section2__history__column">
+                                <div class="about__section2__history__box uk-text-center">
+                                    <div class="item__24">
+                                        <div class="about__section2__history__img uk-display-inline-block uk-cover-container uk-border-circle">
+                                            <canvas width="104" height="104"></canvas>
+                                            <div class="uk-position-cover uk-flex uk-flex-middle uk-flex-center">
+                                                <img src="images/about/partnership-handshake1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item__24">
+                                        <div class="item__8">
+                                            <div class="about__section2__history__year">2018</div>
+                                        </div>
+                                        <div class="item__8">
+                                            <div class="about__section2__history__txt">Ký kết Hợp đồng bán 25% cổ phần cho Hyundai Marine & Fire Insurance Company Limited (HMFI) - Công ty Bảo hiểm Phi nhân thọ có thị phần lớn nhất Hàn Quốc.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about__section2__history__column">
+                                <div class="about__section2__history__box uk-text-center">
+                                    <div class="item__24">
+                                        <div class="about__section2__history__img uk-display-inline-block uk-cover-container uk-border-circle">
+                                            <canvas width="104" height="104"></canvas>
+                                            <div class="uk-position-cover uk-flex uk-flex-middle uk-flex-center">
+                                                <img src="images/about/insurance41.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item__24">
+                                        <div class="item__8">
+                                            <div class="about__section2__history__year">2020</div>
+                                        </div>
+                                        <div class="item__8">
+                                            <div class="about__section2__history__txt">Ra mắt sản phẩm bảo hiểm chuyên biệt dành cho bệnh Ung thư vú đầu tiên trên thị trường và sản phẩm bảo hiểm quốc dân chuyên biệt cho bệnh Sốt xuất huyết.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about__section2__history__column">
+                                <div class="about__section2__history__box uk-text-center">
+                                    <div class="item__24">
+                                        <div class="about__section2__history__img uk-display-inline-block uk-cover-container uk-border-circle">
+                                            <canvas width="104" height="104"></canvas>
+                                            <div class="uk-position-cover uk-flex uk-flex-middle uk-flex-center">
+                                                <img src="images/about/mobile1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item__24">
+                                        <div class="item__8">
+                                            <div class="about__section2__history__year">2021</div>
+                                        </div>
+                                        <div class="item__8">
+                                            <div class="about__section2__history__txt">VBI tiên phong công nghệ, nâng cấp ứng dụng My VBI phiên bản 4.0 với nhiều tính năng ưu việt xứng danh doanh nghiệp bảo hiểm số hàng đầu.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="footer uk-section uk-light">
         <div class="uk-container">
             <div class="" uk-grid>

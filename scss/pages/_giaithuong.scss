@@ -1,0 +1,20 @@
+.giaithuong{
+  &__section1{
+    &__box{
+      &__img{
+        background: #FFFFFF;
+        /* Ink/200 */
+
+        border: 1px solid #DBE0E6;
+        box-sizing: border-box;
+        border-radius: 4px;
+      }
+      &__txt{
+        color: #2E3A5B;
+        @extend .fz-16;
+        line-height: 1.5;
+        font-family: $font-Roboto-Medium;
+      }
+    }
+  }
+}

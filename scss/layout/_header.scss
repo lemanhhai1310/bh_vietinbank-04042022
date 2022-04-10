@@ -42,6 +42,7 @@
   }
   &__bottom{
     background-color: #fff;
+    z-index: 999;
     .uk-container{
       max-width: calc(1200px + 30px);
     }
@@ -67,6 +68,7 @@
           @extend .fz-16;
           font-family: $font-Roboto;
           text-transform: inherit;
+          @extend .header__bottom__navItem;
         }
       }
     }

@@ -37,10 +37,98 @@
       padding-top: 32px;
       padding-bottom: 104px;
     }
+    &__box{
+      background: #FFFFFF;
+      /* Ink/200 */
+
+      border: 1px solid #DBE0E6;
+      box-sizing: border-box;
+      border-radius: 4px;
+      &__name{
+        color: #2E3A5B;
+        @extend .fz-24;
+        line-height: 1.33;
+        font-family: $font-Roboto-Medium;
+      }
+      &__txt1{
+        color: #2E3A5B;
+        font-family: $font-Roboto-Medium;
+        @extend .fz-16;
+        line-height: 1.5;
+      }
+      &__txt2{
+        color: #596481;
+        @extend .fz-16;
+        line-height: 1.5;
+      }
+      &__btn{
+        $x:48px;
+        line-height: calc(#{$x} - 2px);
+        background: #FF61A3;
+        border-color: #FF61A3;
+        color: #ffffff;
+        span{
+          font-family: $font-Roboto-Medium;
+          @extend .fz-16;
+        }
+      }
+    }
+    &__nav{
+      .uk-nav{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        background: #FFFFFF;
+        /* Ink/200 */
+
+        border: 1px solid #DBE0E6;
+        box-sizing: border-box;
+        border-radius: 4px;
+        >li{
+          >a{
+            color: #596481;
+            @extend .fz-16;
+            padding: 8px 0;
+            padding-left: 50px;
+            position: relative;
+            &:before{
+              content: "";
+              width: 4px;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              background: #ffffff;
+              border-radius: 0px 99px 99px 0px;
+            }
+            &:hover{
+              color: #FF61A3;
+              background: #FFF0F6;
+              &:before{
+                background: #FF61A3;
+              }
+            }
+          }
+          &.uk-active{
+            >a{
+              color: #FF61A3;
+              background: #FFF0F6;
+              &:before{
+                background: #FF61A3;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   &__section3{
     background: #3382BF;
     padding-top: 10px;
     padding-bottom: 10px;
+    &__txt{
+      @extend .fz-30;
+      line-height: 1.27;
+      color: #ffffff;
+    }
   }
 }
