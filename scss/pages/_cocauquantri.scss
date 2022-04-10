@@ -131,4 +131,13 @@
       color: #ffffff;
     }
   }
+  &__modal{
+    &__dialog{
+      width: 897px;
+      padding: 24px;
+      @include media-breakpoint-up('m'){
+        padding: 32px;
+      }
+    }
+  }
 }

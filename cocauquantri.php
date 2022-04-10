@@ -118,7 +118,7 @@ Là một trong những người đặt viên gạch xây dựng VBI từ nhữn
                                         </div>
                                     </div>
                                     <div class="item__24">
-                                        <a href="" class="cocauquantri__section2__box__btn uk-button uk-button-default uk-border-pill"><span>Xem chi tiết</span></a>
+                                        <a href="#modal-chitietquantri" uk-toggle class="cocauquantri__section2__box__btn uk-button uk-button-default uk-border-pill"><span>Xem chi tiết</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -144,4 +144,36 @@ Là một trong những người đặt viên gạch xây dựng VBI từ nhữn
         </div>
     </div>
 </div>
+<div id="modal-chitietquantri" class="cocauquantri__modal uk-flex-top" uk-modal>
+    <div class="cocauquantri__modal__dialog uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <div class="uk-grid-32" uk-grid>
+            <div class="uk-width-auto@m">
+                <div class="uk-cover-container uk-border-circle">
+                    <img src="images/lemanhhai_anhthe.jpg" alt="" uk-cover="">
+                    <canvas width="248" height="248"></canvas>
+                </div>
+            </div>
+            <div class="uk-width-expand">
+                <div class="item__12">
+                    <div class="item__8">
+                        <div class="cocauquantri__section2__box__name"><?= $v['name'] ?></div>
+                    </div>
+                    <div class="item__8">
+                        <div class="cocauquantri__section2__box__txt1"><?= $v['txt1'] ?></div>
+                    </div>
+                </div>
+                <div class="item__12">
+                    <div class="cocauquantri__section2__box__txt2"><?= $v['txt2'] ?></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+    UIkit.modal('#modal-chitietquantri').show();
+</script>
 <?php require "template-parts/layouts/footer.php"; ?>

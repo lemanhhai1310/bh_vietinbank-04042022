@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css" />
-    <link rel="stylesheet" href="style.css?v=1649582994">
+    <link rel="stylesheet" href="style.css?v=1649588214">
     <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
-    <script src="js/app.js?v=1649582994"></script>
+    <script src="js/app.js?v=1649588214"></script>
 </head>
 <body class="not_home">
 <!-- Load Facebook SDK for JavaScript -->
@@ -97,9 +97,9 @@
         <div class="uk-navbar-center">
             <ul class="uk-navbar-nav">
                 <li class=""><a href="congty_about.php">Giới thiệu VBI</a></li>
-                <li class=""><a href="">Nhà đầu tư</a></li>
+                <li class=""><a href="nhadautu.php">Nhà đầu tư</a></li>
                 <li class="uk-active"><a href="cocauquantri.php">Cơ cấu quản trị</a></li>
-                <li class=""><a href="">Giải thưởng</a></li>
+                <li class=""><a href="giaithuong.php">Giải thưởng</a></li>
             </ul>
         </div>
     </nav><div class="uk-section-small cocauquantri__section2">
@@ -143,7 +143,7 @@
                                         </div>
                                     </div>
                                     <div class="item__24">
-                                        <a href="" class="cocauquantri__section2__box__btn uk-button uk-button-default uk-border-pill"><span>Xem chi tiết</span></a>
+                                        <a href="#modal-chitietquantri" uk-toggle class="cocauquantri__section2__box__btn uk-button uk-button-default uk-border-pill"><span>Xem chi tiết</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -178,7 +178,7 @@
                                         </div>
                                     </div>
                                     <div class="item__24">
-                                        <a href="" class="cocauquantri__section2__box__btn uk-button uk-button-default uk-border-pill"><span>Xem chi tiết</span></a>
+                                        <a href="#modal-chitietquantri" uk-toggle class="cocauquantri__section2__box__btn uk-button uk-button-default uk-border-pill"><span>Xem chi tiết</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -213,7 +213,7 @@
                                         </div>
                                     </div>
                                     <div class="item__24">
-                                        <a href="" class="cocauquantri__section2__box__btn uk-button uk-button-default uk-border-pill"><span>Xem chi tiết</span></a>
+                                        <a href="#modal-chitietquantri" uk-toggle class="cocauquantri__section2__box__btn uk-button uk-button-default uk-border-pill"><span>Xem chi tiết</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -247,7 +247,7 @@
                                         </div>
                                     </div>
                                     <div class="item__24">
-                                        <a href="" class="cocauquantri__section2__box__btn uk-button uk-button-default uk-border-pill"><span>Xem chi tiết</span></a>
+                                        <a href="#modal-chitietquantri" uk-toggle class="cocauquantri__section2__box__btn uk-button uk-button-default uk-border-pill"><span>Xem chi tiết</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -272,6 +272,38 @@
             </div>
         </div>
     </div>
+    <div id="modal-chitietquantri" class="cocauquantri__modal uk-flex-top" uk-modal>
+        <div class="cocauquantri__modal__dialog uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+
+            <div class="uk-grid-32" uk-grid>
+                <div class="uk-width-auto@m">
+                    <div class="uk-cover-container uk-border-circle">
+                        <img src="images/lemanhhai_anhthe.jpg" alt="" uk-cover="">
+                        <canvas width="248" height="248"></canvas>
+                    </div>
+                </div>
+                <div class="uk-width-expand">
+                    <div class="item__12">
+                        <div class="item__8">
+                            <div class="cocauquantri__section2__box__name">Ông Hur Jung Hoe</div>
+                        </div>
+                        <div class="item__8">
+                            <div class="cocauquantri__section2__box__txt1">Thành viên HĐQT</div>
+                        </div>
+                    </div>
+                    <div class="item__12">
+                        <div class="cocauquantri__section2__box__txt2">Ông Hur Jung Hoe là Cử nhân Đại học HanYang, Hàn Quốc. Từ tháng 7/2003, ông đảm nhiệm nhiều vị trí tại Công ty TNHH Hàng hải và Cháy nổ Hyundai. Năm 2017, ông được bổ nhiệm làm Phó Giám đốc Phòng Phát triển kinh doanh nước ngoài. Từ tháng 9/2020, ông là thành viên HĐQT Bảo hiểm VietinBank và Trưởng văn phòng đại diện của Công ty TNHH Hàng hải và Cháy nổ Hyundai.</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        UIkit.modal('#modal-chitietquantri').show();
+    </script>
     <div class="footer uk-section uk-light">
         <div class="uk-container">
             <div class="" uk-grid>
