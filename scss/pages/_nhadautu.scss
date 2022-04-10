@@ -1,5 +1,50 @@
 .nhadautu{
   &__section1{
+    &__fillter{
+      &__btn{
+        min-width: 187px;
+        $x:52px;
+        line-height: calc(#{$x} - 2px);
+        background: #FFFFFF;
+        /* Ink/200 */
+        text-transform: inherit;
+        border: 1px solid #DBE0E6;
+        box-sizing: border-box;
+        border-radius: 8px;
+        $y:13px;
+        padding-left: #{$y};
+        text-align: left;
+        .uk-icon{
+          right: 6px;
+          //background-image: url("data:image/svg+xml,%3Csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.7926 1.29308L6.49959 5.58608L2.20659 1.29308C2.11435 1.19757 2.004 1.12139 1.882 1.06898C1.75999 1.01657 1.62877 0.988985 1.49599 0.987831C1.36321 0.986677 1.23154 1.01198 1.10864 1.06226C0.985743 1.11254 0.874091 1.18679 0.780198 1.28069C0.686305 1.37458 0.612052 1.48623 0.561771 1.60913C0.51149 1.73202 0.486189 1.8637 0.487342 1.99648C0.488496 2.12926 0.516082 2.26048 0.568491 2.38249C0.6209 2.50449 0.697083 2.61483 0.792593 2.70708L5.79259 7.70708C5.98012 7.89455 6.23443 7.99987 6.49959 7.99987C6.76476 7.99987 7.01906 7.89455 7.20659 7.70708L12.2066 2.70708C12.3021 2.61483 12.3783 2.50449 12.4307 2.38249C12.4831 2.26048 12.5107 2.12926 12.5118 1.99648C12.513 1.8637 12.4877 1.73202 12.4374 1.60913C12.3871 1.48623 12.3129 1.37458 12.219 1.28069C12.1251 1.18679 12.0134 1.11254 11.8905 1.06226C11.7677 1.01198 11.636 0.986677 11.5032 0.987831C11.3704 0.988985 11.2392 1.01657 11.1172 1.06898C10.9952 1.12139 10.8848 1.19757 10.7926 1.29308Z' fill='%23596481'/%3E%3C/svg%3E%0A");
+          //background-repeat: no-repeat;
+          //background-position: center;
+          svg{
+            //opacity: 0;
+          }
+        }
+        span{
+          $z:9px;
+          &:nth-child(1){
+            color: #8592AB;
+            @extend .fz-12;
+            line-height: 1.33;
+            position: absolute;
+            top: #{$z};
+            left: #{$y};
+            //display: block;
+          }
+          &:nth-child(2){
+            //display: block;
+            color: #2E3A5B;
+            @extend .fz-16;
+            line-height: 1.25;
+            position: relative;
+            top: calc(#{$z} + 2px);
+          }
+        }
+      }
+    }
     &__table{
       background: #FFFFFF;
       /* Ink/200 */

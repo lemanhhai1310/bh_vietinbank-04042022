@@ -52,7 +52,36 @@ require "template-parts/layouts/navbar-menu.php"; ?>
         <div class="item__21">
             <div class="uk-child-width-auto uk-grid-small" uk-grid>
                 <div>
-                    
+                    <div uk-form-custom="target: > * > span:nth-child(2)">
+                        <select>
+                            <option value="">2021</option>
+                            <option value="1">Option 01</option>
+                            <option value="2">Option 02</option>
+                            <option value="3">Option 03</option>
+                            <option value="4">Option 04</option>
+                        </select>
+                        <button class="nhadautu__section1__fillter__btn uk-button uk-button-default uk-position-relative" type="button" tabindex="-1">
+                            <span>Chọn năm</span>
+                            <span></span>
+                            <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <div uk-form-custom="target: > * > span:nth-child(2)">
+                        <select>
+                            <option value="">Tất cả</option>
+                            <option value="1">Option 01</option>
+                            <option value="2">Option 02</option>
+                            <option value="3">Option 03</option>
+                            <option value="4">Option 04</option>
+                        </select>
+                        <button class="nhadautu__section1__fillter__btn uk-button uk-button-default uk-position-relative" type="button" tabindex="-1">
+                            <span>Loại thông tin</span>
+                            <span></span>
+                            <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
