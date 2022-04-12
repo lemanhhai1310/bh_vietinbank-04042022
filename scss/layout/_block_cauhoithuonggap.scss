@@ -42,6 +42,9 @@
     .tintuc__block01 &{
       margin-top: -80px;
     }
+    .about__section1 &{
+      @extend .fz-48;
+    }
   }
   &__txt{
     color: #596481;

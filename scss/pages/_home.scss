@@ -115,6 +115,7 @@
       border: 1px solid #DBE0E6;
       box-sizing: border-box;
       border-radius: 8px;
+      overflow: hidden;
       &__title{
         color: #2E3A5B;
         @extend .fz-16;

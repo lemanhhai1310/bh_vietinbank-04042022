@@ -1,10 +1,463 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
+    <script src="/__prepros.js"></script>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bảo hiểm VietinBank - 01. Tin tức VBI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1649779172">
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
+    <script src="js/app.js?v=1649779172"></script>
 </head>
-<body>
+<body class="not_home">
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="2428809380682169"
+     logged_in_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi"
+     logged_out_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi">
+</div>
+<script>
+    defer(function() {
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v5.0'
+            });
+        };
 
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    }, 5000);
+</script><!--app-->
+<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+    <div class="header__bottom" uk-sticky>
+        <div class="uk-container uk-padding-remove">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a href="." class="uk-navbar-item uk-logo"><img class="header__bottom__logoImg" src="images/logo.png" alt=""></a>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#">Trang chủ</a></li>
+                        <li><a href="congty_about.php">Công ty</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="boithuong.php">Bồi thường</a></li>
+                        <li><a href="#">Gia hạn hợp đồng</a></li>
+                    </ul>
+                    <div class="uk-navbar-item">
+                        <a href="#" class="header__bottom__txtUnderline">Trở thành đại lý</a>
+                    </div>
+                    <a href="" class="uk-navbar-item">
+                        <span class="header__top__cartIcon"></span>
+                    </a>
+                    <div class="uk-navbar-item">
+                        <a href="" class="header__top__btnLogin uk-button uk-button-default uk-border-pill"><span>Đăng nhập</span></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--breadcrumb-->
+    <div class="uk-section-xsmall uk-overflow-auto breadcrumb__section" uk-sticky="offset: 60;media:(max-width: 959px)">
+        <div class="uk-container uk-padding-remove">
+            <ul class="uk-breadcrumb uk-flex uk-flex-nowrap">
+                <li><a href=".">Trang chủ</a></li>
+                <li><a href="">Tin tức</a></li>
+                <li><a href="">Tin tức VBI</a></li>
+                <li><span>VBI ra mắt bảo hiểm VBI vì cộng đồng</span></li>
+            </ul>
+        </div>
+    </div>
+    <!--/breadcrumb--><div class="uk-section tintuc__sectionChitiet">
+    <div class="item__40">
+        <div class="uk-container uk-container-small">
+            <div class="item__40">
+                <img src="images/chitiettintuc/banner1.png" alt="">
+            </div>
+            <div class="item__40">
+                <div class="item__50">
+                    <div class="item__40">
+                        <div class="item__32">
+                            <div class="item__16">
+                                <div class="item__4">
+                                    <h1 class="tintuc__sectionChitiet__title uk-h1 uk-margin-remove">VBI Nghệ An Chi Trả 300 Triệu Đồng <br class="uk-visible@m">
+                                        Bảo Hiểm Người Vay Vốn</h1>
+                                </div>
+                                <div class="item__4">
+                                    <div class="home__blockNews__card__time">09:03 20/01/2022</div>
+                                </div>
+                            </div>
+                            <!--List baiviet lien quan-->
+                            <div class="item__16">
+                                <ul class="uk-list uk-list-bullet tintuc__sectionChitiet__listNav">
+                                    <li><a href="">VBI Nghệ An Chi Trả 300 Triệu Đồng Bảo Hiểm Người Vay Vốn</a></li>
+                                    <li><a href="">VBI Bảo Hiểm Người Vay Vốn</a></li>
+                                </ul>
+                            </div>
+                            <!--/List baiviet lien quan-->
+                        </div>
+                        <!--Anh dai dien baiviet-->
+                        <div class="item__32">
+                            <img src="images/chitiettintuc/Rectangle6102.png" alt="">
+                        </div>
+                        <!--/Anh dai dien baiviet-->
+                    </div>
+                    <!--Content baiviet-->
+                    <div class="item__40">
+                        <article class="uk-article tintuc__sectionChitiet__article">
+                            <p>
+                                Điều này có liên quan gì đến hợp đồng bảo hiểm chủ nhà của tôi?
+                                Bạn có thể nhận ra rằng phí bảo hiểm chủ nhà của bạn có thể tăng lên theo thời gian. Điều này có thể xảy ra vì nhiều lý do — chẳng hạn như lịch sử nộp đơn khiếu nại gần đây hoặc thay đổi mô hình định giá ở tiểu bang của bạn.
+                            </p>
+
+                            <p>Một trong những yếu tố liên quan đến các mô hình định giá đó là chi phí xây dựng lại (RC). Chi phí xây dựng lại là số tiền ước tính sẽ tốn để xây dựng lại ngôi nhà của bạn từ đầu, nếu nó bị phá hủy trong một kịch bản thảm khốc.</p>
+
+
+
+                            <figure>
+                                <img src="images/chitiettintuc/Rectangle6101.png" alt="">
+                            </figure>
+
+
+
+                            <p>Chính xác thì tại sao chi phí tái thiết lại tăng?
+                                Nền kinh tế là một con thú phức tạp, với hàng triệu bộ phận chuyển động. Tuy nhiên, trước nguy cơ dư thừa, có ba lý do chính khiến chi phí tái thiết hiện tại cho ngôi nhà của bạn có thể cao hơn so với cách đây vài năm. Hãy đi sâu vào.</p>
+
+
+                            <p>Thay đổi tỷ lệ lao động</p>
+
+                            <p>Tỷ lệ trả cho công nhân xây dựng ngày càng tăng. “Tỷ lệ lao động bán lẻ theo giờ kết hợp tăng 4,1% từ tháng 7 năm 2020 đến tháng 7 năm 2021, tăng nhẹ so với mức tăng 3,8% được ghi nhận từ tháng 4 năm 2020 đến tháng 4 năm 2021,” báo cáo của Verisk. Chi phí nhân công cho thợ ống nước tăng mạnh nhất, ở mức 4,9%.</p>
+
+                            <p>Giờ đây, việc những người lao động yêu cầu mức lương cao hơn không phải là điều xấu - họ làm việc chăm chỉ và xứng đáng với điều đó! - nhưng nó có tác động tăng thêm chi phí xây dựng lại ngôi nhà của bạn trong trường hợp có thiên tai.</p>
+
+                            <p>Chi phí vật tư</p>
+
+                            <p>Nói một cách đơn giản, các vật liệu được sử dụng để xây dựng lại ngôi nhà của bạn ngày càng đắt hơn. Đặc biệt, gỗ xẻ - gỗ hoặc gỗ có khả năng tạo thành khuôn khổ cho ngôi nhà của bạn. Vào tháng 2 năm 2021, giá gỗ mềm cao hơn khoảng 112% so với giá tháng 2 năm 2020, theo Random Lengths, một phóng viên độc lập hàng đầu về giá thị trường gỗ xẻ ở Bắc Mỹ.</p>
+
+                            <p>Thuế quan và chiến tranh thương mại</p>
+
+                            <p>Thuế quan là một loại thuế đánh vào hàng hóa xuất khẩu hoặc nhập khẩu, thường là giữa hai quốc gia. Vào năm 2018, chính phủ Hoa Kỳ bắt đầu áp đặt các mức thuế mới cao hơn đối với thép, nhôm và gỗ xẻ từ một số quốc gia - đặc biệt là Trung Quốc.</p>
+
+                            <p>Các mức thuế này tác động đến chi phí của nguyên liệu nhập khẩu; giá cả có thể trở nên biến động và thuế quan thường dẫn đến sự chậm trễ trong vận chuyển và xử lý tại các cảng. Nói tóm lại, nó làm cho các công ty xây dựng thêm đau đầu về quan liêu và có thể làm cho toàn bộ quy trình trở nên tốn kém hơn. Đoán xem nào? Tất cả những điều đó đều đổ xuống cho bạn, người tiêu dùng.</p>
+
+                            <p>Vậy bạn nên làm gì?</p>
+                        </article>
+                    </div>
+                    <!--/Content baiviet-->
+                </div>
+                <!--Tag-->
+                <div class="item__50">
+                    <div class="item__32">
+                        <div class="uk-child-width-auto uk-grid-small" uk-grid>
+                            <div>
+                                <div class="uk-position-relative tintuc__sectionChitiet__tag uk-border-pill uk-active">
+                                    <span class="tintuc__sectionChitiet__tag__txt">Bảo hiểm sức khỏe</span>
+                                    <a class="uk-position-center-right" href="" uk-icon="icon: close"></a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-position-relative tintuc__sectionChitiet__tag uk-border-pill ">
+                                    <span class="tintuc__sectionChitiet__tag__txt">Bảo hiểm du lịch</span>
+                                    <a class="uk-position-center-right" href="" uk-icon="icon: close"></a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-position-relative tintuc__sectionChitiet__tag uk-border-pill ">
+                                    <span class="tintuc__sectionChitiet__tag__txt">Bảo hiểm ung thư</span>
+                                    <a class="uk-position-center-right" href="" uk-icon="icon: close"></a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-position-relative tintuc__sectionChitiet__tag uk-border-pill ">
+                                    <span class="tintuc__sectionChitiet__tag__txt">Sức khỏe</span>
+                                    <a class="uk-position-center-right" href="" uk-icon="icon: close"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item__32">
+                        <div class="uk-text-center">
+                            <button class="tintuc__sectionChitiet__btnSubmit uk-button uk-button-default uk-border-pill">
+                                <span>Nhận báo giá sản phẩm</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--/Tag-->
+            </div>
+            <div class="item__40">
+                <img src="images/chitiettintuc/banner2.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="item__40">
+        <div class="uk-container">
+            <!--Hãy là người đầu tiên nhận được thông tin ưu đãi cho sản phẩm bảo hiểm này-->
+            <div class="tintuc__sectionChitiet__item">
+                <div class="tintuc__sectionChitiet__box uk-flex uk-flex-middle">
+                    <div class="uk-width-1-1 uk-section-xsmall">
+                        <div class="uk-flex-center" uk-grid>
+                            <div class="uk-width-1-2@m">
+                                <div class="item__20">
+                                    <div class="tintuc__sectionChitiet__box__title uk-text-center">Hãy là người đầu tiên nhận được
+                                        <br class="uk-visible@m">
+                                        thông tin ưu đãi cho sản phẩm bảo hiểm này</div>
+                                </div>
+                                <div class="item__20">
+                                    <div class="uk-grid-small uk-grid-match" uk-grid>
+                                        <div class="uk-width-expand">
+                                            <input class="uk-input tintuc__sectionChitiet__box__input" type="email" placeholder="Email để nhận thông tin ">
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <button class="tintuc__sectionChitiet__box__btn uk-border-pill uk-button uk-button-default"><span>Gửi</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/Hãy là người đầu tiên nhận được thông tin ưu đãi cho sản phẩm bảo hiểm này-->
+
+            <!--Bài liên quan-->
+            <div class="tintuc__sectionChitiet__item">
+                <div class="item__16">
+                    <div class="tintuc__sectionChitiet__title1">Bài liên quan</div>
+                </div>
+                <div class="item__16">
+                    <div class="uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
+                        <div>
+                            <div class="home__blockNews__card uk-card uk-flex uk-flex-column">
+                                <div class="uk-cover-container">
+                                    <img src="https://znews-photo.zingcdn.me/w960/Uploaded/rotntv/2022_04_01/2600x_1_2.jpeg" alt="" uk-cover="">
+                                    <canvas width="287" height="166"></canvas>
+                                </div>
+                                <div class="uk-flex-auto uk-padding-small">
+                                    <div class="home__blockNews__card__title"><a href="">VBI Nghệ An Chi Trả 300 Triệu Đồng Bảo Hiểm Người Vay Vốn</a></div>
+                                    <div class="home__blockNews__card__time">09:03 20/01/2022</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="home__blockNews__card uk-card uk-flex uk-flex-column">
+                                <div class="uk-cover-container">
+                                    <img src="https://znews-photo.zingcdn.me/w960/Uploaded/rotntv/2022_04_01/2600x_1_2.jpeg" alt="" uk-cover="">
+                                    <canvas width="287" height="166"></canvas>
+                                </div>
+                                <div class="uk-flex-auto uk-padding-small">
+                                    <div class="home__blockNews__card__title"><a href="">VBI Nghệ An Chi Trả 300 Triệu Đồng Bảo Hiểm Người Vay Vốn</a></div>
+                                    <div class="home__blockNews__card__time">09:03 20/01/2022</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="home__blockNews__card uk-card uk-flex uk-flex-column">
+                                <div class="uk-cover-container">
+                                    <img src="https://znews-photo.zingcdn.me/w960/Uploaded/rotntv/2022_04_01/2600x_1_2.jpeg" alt="" uk-cover="">
+                                    <canvas width="287" height="166"></canvas>
+                                </div>
+                                <div class="uk-flex-auto uk-padding-small">
+                                    <div class="home__blockNews__card__title"><a href="">VBI Nghệ An Chi Trả 300 Triệu Đồng Bảo Hiểm Người Vay Vốn</a></div>
+                                    <div class="home__blockNews__card__time">09:03 20/01/2022</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="home__blockNews__card uk-card uk-flex uk-flex-column">
+                                <div class="uk-cover-container">
+                                    <img src="https://znews-photo.zingcdn.me/w960/Uploaded/rotntv/2022_04_01/2600x_1_2.jpeg" alt="" uk-cover="">
+                                    <canvas width="287" height="166"></canvas>
+                                </div>
+                                <div class="uk-flex-auto uk-padding-small">
+                                    <div class="home__blockNews__card__title"><a href="">VBI Nghệ An Chi Trả 300 Triệu Đồng Bảo Hiểm Người Vay Vốn</a></div>
+                                    <div class="home__blockNews__card__time">09:03 20/01/2022</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/Bài liên quan-->
+        </div>
+    </div>
+</div>
+    <div class="footer uk-section uk-light">
+        <div class="uk-container">
+            <div class="" uk-grid>
+                <div class="uk-width-auto@m footer__w1">
+                    <div class="item__30">
+                        <img src="images/logo_f.png" alt="">
+                    </div>
+                    <div class="item__30">
+                        <div class="uk-grid-small uk-grid-50-s" uk-grid>
+                            <div class="uk-width-1-1@m uk-width-1-2@s">
+                                <ul class="uk-list footer__listAddress">
+                                    <li class="footer__listAddress__li footer__listAddress__map">Tầng 10 -11, tòa nhà 126 Đội Cấn Quận Ba Đình, Hà Nội</li>
+                                    <li class="footer__listAddress__li footer__listAddress__map">Số 243A Đê La Thành, Láng Thượng, Đống Đa, Hà Nội</li>
+                                    <li class="footer__listAddress__li footer__listAddress__phone">1900.1566</li>
+                                </ul>
+                            </div>
+                            <div class="uk-width-1-1@m uk-width-1-2@s">
+                                <div class="item__16">
+                                    <div>Tải xuống ứng dụng của VBI</div>
+                                </div>
+                                <div class="item__16">
+                                    <div class="uk-flex-middle uk-grid-medium" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <img src="images/qrcode.png" alt="">
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="uk-flex-middle uk-grid-10" uk-grid>
+                                                <div>
+                                                    <a href=""><img src="images/googleplay.png" alt=""></a>
+                                                </div>
+                                                <div>
+                                                    <a href=""><img src="images/appstore.png" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-1-1@m uk-width-1-2@s uk-visible@m">
+                                <div class="item__16">
+                                    <div>Theo dõi VBI qua mạng xã hội</div>
+                                </div>
+                                <div class="item__16">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-expand">
+                    <div class="item__32">
+                        <div class="uk-child-width-1-4@m" uk-grid>
+                            <div>
+                                <div class="item__12">
+                                    <div class="footer__title2">Công ty</div>
+                                </div>
+                                <div class="item__12">
+                                    <ul class="footer__nav uk-nav uk-nav-default">
+                                        <li><a href="#">Về chúng tôi</a></li>
+                                        <li><a href="#">Ban giám đốc</a></li>
+                                        <li><a href="#">Cơ hội nghề nghiệp</a></li>
+                                        <li><a href="#">Quan hệ đối tác</a></li>
+                                        <li><a href="#">Sơ đồ trang web</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="item__12">
+                                    <div class="footer__title2">Hỗ trợ</div>
+                                </div>
+                                <div class="item__12">
+                                    <ul class="footer__nav uk-nav uk-nav-default">
+                                        <li><a href="">Dịch vụ khách hàng</a></li>
+                                        <li><a href="">Yêu cầu bồi thường</a></li>
+                                        <li><a href="">Câu hỏi thường gặp</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="item__12">
+                                    <div class="footer__title2">Tiện ích</div>
+                                </div>
+                                <div class="item__12">
+                                    <ul class="footer__nav uk-nav uk-nav-default">
+                                        <li><a href="">Mã thanh toán</a></li>
+                                        <li><a href="">Garage gần bạn</a></li>
+                                        <li><a href="">Bệnh viện bảo lãnh</a></li>
+                                        <li><a href="">Liên hệ CSGT</a></li>
+                                        <li><a href="">Trung tâm đăng kiểm</a></li>
+                                        <li><a href="">Trung tâm cứu hộ</a></li>
+                                        <li><a href="">VBI Gần bạn</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item__32">
+                        <div class="item__16">
+                            <div class="footer__title2">Sản phẩm bảo hiểm</div>
+                        </div>
+                        <div class="item__16">
+                            <div uk-grid>
+                                <div class="uk-width-expand">
+                                    <div class="item__16">
+                                        <div class="footer__title3">Sản phẩm cho bạn và gia đình</div>
+                                    </div>
+                                    <div class="item__16">
+                                        <div class="uk-child-width-1-3@m" uk-grid>
+                                            <div>
+                                                <ul class="footer__nav uk-nav uk-nav-default">
+                                                    <li><a href="">Bảo hiểm Sức khỏe</a></li>
+                                                    <li><a href="">Bảo hiểm ung thư</a></li>
+                                                    <li><a href="">Bảo hiểm ung thư vú</a></li>
+                                                    <li><a href="">Bảo hiểm vì cộng đồng</a></li>
+                                                    <li><a href="">Bảo hiểm Tai nạn con người</a></li>
+                                                    <li><a href="">Bảo hiểm sốt xuất huyết</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="footer__nav uk-nav uk-nav-default">
+                                                    <li><a href="">Bảo hiểm vật chất ô tô</a></li>
+                                                    <li><a href="">Bảo hiểm vật chất xe máy</a></li>
+                                                    <li><a href="">Bảo hiểm TNDS ô tô</a></li>
+                                                    <li><a href="">Bảo hiểm TNDS xe máy</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="footer__nav uk-nav uk-nav-default">
+                                                    <li><a href="">Bảo hiểm nhà tư nhân</a></li>
+                                                    <li><a href="">Bảo hiểm du lịch nội địa</a></li>
+                                                    <li><a href="">Bảo hiểm du lịch quốc tế</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-4@m">
+                                    <div class="item__16">
+                                        <div class="footer__title3">Sản phẩm doanh nghiệp</div>
+                                    </div>
+                                    <div class="item__16">
+                                        <ul class="footer__nav uk-nav uk-nav-default">
+                                            <li><a href="">Sức khỏe nhân viên</a></li>
+                                            <li><a href="">Bảo hiểm xe cơ giới</a></li>
+                                            <li><a href="">Bảo hiểm tàu biển</a></li>
+                                            <li><a href="">Bảo vệ công trình xây dựng</a></li>
+                                            <li><a href="">Bảo hiểm trách nhiệm</a></li>
+                                            <li><a href="">Bảo hiểm năng lượng</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/app-->
 </body>
 </html>
