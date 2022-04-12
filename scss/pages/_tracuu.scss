@@ -1,0 +1,89 @@
+.tracuu{
+  &__btnSubmit{
+    $x:48px;
+    line-height: calc(#{$x} - 2px);
+    background: #FF61A3;
+    border-color: #FF61A3;
+    color: #ffffff;
+    text-transform: inherit;
+    span{
+      @extend .fz-16;
+      font-family: $font-SF-Pro-Display-Medium;
+    }
+  }
+  &__boxTop80{
+    margin-top: 80px;
+  }
+  &__boxTop46{
+    margin-top: 46px;
+  }
+  &__txt1{
+    color: #2E3A5B;
+    line-height: 1.5;
+    @extend .fz-16;
+  }
+  &__boxForm{
+    $x:12px;
+    &__btnSelect{
+      $y:52px;
+      line-height: calc(#{$y} - 2px);
+      border: 1px solid #DBE0E6;
+      box-sizing: border-box;
+      border-radius: 8px;
+      text-transform: inherit;
+      text-align: left;
+      padding-left: #{$x};
+      position: relative;
+      span{
+        &:first-child{
+          color: #2E3A5B;
+          @extend .fz-16;
+          line-height: 1.25;
+          font-family: $font-SF-Pro-Display-Regular;
+        }
+      }
+      .uk-icon{
+        right: calc(#{$x} - 3px);
+      }
+    }
+    &__input{
+      background: #FFFFFF;
+      border: 1px solid #DBE0E6;
+      box-sizing: border-box;
+      border-radius: 8px;
+      height: 52px;
+      color: #2E3A5B;
+      @extend .fz-16;
+      font-family: $font-SF-Pro-Display-Regular;
+      padding-top: 15px;
+      &::placeholder{
+        //color: #2E3A5B;
+      }
+    }
+    &__label{
+      left: #{$x};
+      color: #596481;
+      @extend .fz-16;
+      font-family: $font-SF-Pro-Display-Regular;
+      line-height: 1.25;
+      transition: all .3s;
+      .tracuu__boxForm__input:focus ~ &,
+      .inValid> &{
+        color: #8592AB;
+        line-height: 1.33;
+        @extend .fz-12;
+        top: 14px;
+      }
+    }
+    &__icon{
+      &--calendar{
+        //background-repeat: no-repeat;
+        //background-position: center;
+        //background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1 8.5C1 8.22386 1.22386 8 1.5 8H22.5C22.7761 8 23 8.22386 23 8.5C23 8.77614 22.7761 9 22.5 9H1.5C1.22386 9 1 8.77614 1 8.5Z' fill='%238592AB'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.5 3.5C2.67157 3.5 2 4.17157 2 5V20.5C2 21.3284 2.67157 22 3.5 22H20.5C21.3284 22 22 21.3284 22 20.5V5C22 4.17157 21.3284 3.5 20.5 3.5H3.5ZM1 5C1 3.61929 2.11929 2.5 3.5 2.5H20.5C21.8807 2.5 23 3.61929 23 5V20.5C23 21.8807 21.8807 23 20.5 23H3.5C2.11929 23 1 21.8807 1 20.5V5Z' fill='%238592AB'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.5 0.5C6.77614 0.5 7 0.723858 7 1V5.5C7 5.77614 6.77614 6 6.5 6C6.22386 6 6 5.77614 6 5.5V1C6 0.723858 6.22386 0.5 6.5 0.5Z' fill='%238592AB'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.5 0.5C17.7761 0.5 18 0.723858 18 1V5.5C18 5.77614 17.7761 6 17.5 6C17.2239 6 17 5.77614 17 5.5V1C17 0.723858 17.2239 0.5 17.5 0.5Z' fill='%238592AB'/%3E%3C/svg%3E%0A");
+        svg{
+          //opacity: 0;
+        }
+      }
+    }
+  }
+}
