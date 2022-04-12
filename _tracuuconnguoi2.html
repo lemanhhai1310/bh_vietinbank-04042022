@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <script src="/__prepros.js"></script>
+    <meta charset="UTF-8">
+    <title>Bảo hiểm VietinBank - 1.3 Tra cứu con người 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1649794134">
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
+    <script src="js/app.js?v=1649794134"></script>
+</head>
+<body class="not_home">
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="2428809380682169"
+     logged_in_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi"
+     logged_out_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi">
+</div>
+<script>
+    defer(function() {
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v5.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    }, 5000);
+</script><!--app-->
+<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+    <div class="header__bottom" uk-sticky>
+        <div class="uk-container uk-padding-remove">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a href="." class="uk-navbar-item uk-logo"><img class="header__bottom__logoImg" src="images/logo.png" alt=""></a>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#">Trang chủ</a></li>
+                        <li><a href="congty_about.php">Công ty</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="boithuong.php">Bồi thường</a></li>
+                        <li><a href="#">Gia hạn hợp đồng</a></li>
+                    </ul>
+                    <div class="uk-navbar-item">
+                        <a href="#" class="header__bottom__txtUnderline">Trở thành đại lý</a>
+                    </div>
+                    <a href="" class="uk-navbar-item">
+                        <span class="header__top__cartIcon"></span>
+                    </a>
+                    <div class="uk-navbar-item">
+                        <a href="" class="header__top__btnLogin uk-button uk-button-default uk-border-pill"><span>Đăng nhập</span></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--breadcrumb-->
+    <div class="uk-section-xsmall uk-overflow-auto breadcrumb__section" uk-sticky="offset: 60;media:(max-width: 959px)">
+        <div class="uk-container uk-padding-remove">
+            <ul class="uk-breadcrumb uk-flex uk-flex-nowrap">
+                <li><a href=".">Trang chủ</a></li>
+                <li><a href="">Tra cứu</a></li>
+                <li><span>Giấy chứng nhận điện tử</span></li>
+            </ul>
+        </div>
+    </div>
+    <!--/breadcrumb--><div class="uk-section-xsmall cocauquantri__section1">
+    <div class="uk-container">
+        <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Tra cứu</h2>
+    </div>
+</div>
+    <nav class="uk-navbar-container cocauquantri__navbar" uk-navbar>
+        <div class="uk-navbar-left">
+            <a href="" class="uk-navbar-item"></a>
+        </div>
+        <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="tracuugiaychungnhandientu.php">Giấy chứng nhận điện tử</a></li>
+                <li class=""><a href="">Hóa đơn điện tử</a></li>
+                <li class=""><a href="">Tiến trình bồi thường</a></li>
+            </ul>
+        </div>
+    </nav><script>
+    window.addEventListener("load", function (event) {
+
+    });
+</script>
+    <div class="uk-section-small cocauquantri__section2">
+        <div class="uk-container">
+            <div class="uk-grid-small uk-child-width-1-4@m uk-flex-middle" uk-grid>
+                <div>
+                    <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
+                        <select>
+                            <option value="">Bảo hiểm sức khỏe</option>
+                            <option value="1">Option 01</option>
+                            <option value="2">Option 02</option>
+                            <option value="3">Option 03</option>
+                            <option value="4">Option 04</option>
+                        </select>
+                        <button class="tracuu__boxForm__btnSelect uk-button uk-button-default uk-width-1-1" type="button" tabindex="-1">
+                            <span></span>
+                            <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-position-relative tracuu__boxForm inValid">
+                        <input class="uk-input tracuu__boxForm__input" type="text" placeholder="" value="0123456789">
+                        <label class="uk-form-label uk-position-center-left tracuu__boxForm__label">Nhập số CMND</label>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-position-relative tracuu__boxForm inValid">
+                        <input class="uk-input tracuu__boxForm__input" type="text" placeholder="" value="19/09/1997">
+                        <label class="uk-form-label uk-position-center-left tracuu__boxForm__label">Nhập ngày sinh</label>
+                        <span class="tracuu__boxForm__icon tracuu__boxForm__icon--calendar uk-form-icon uk-form-icon-flip" uk-icon="icon: calendar"></span>
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="tracuu__btnSubmit uk-button uk-button-default uk-width-1-1 uk-border-pill"><span>Tra cứu</span></button>
+                </div>
+            </div>
+            <div class="tracuu__boxTop40">
+                <div class="uk-child-width-1-3@m uk-grid-small" uk-grid>
+                    <div>
+                        <div class="tracuu__box1 uk-padding-small">
+                            <div class="tracuu__box1__item">
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <img class="tracuu__box1__img" src="images/tracuu/family12.png" alt="">
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <div class="tracuu__box1__title">Bảo hiểm sức khỏe</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tracuu__box1__item">
+                                <div class="tracuu__box1__item2">
+                                    <div class="uk-flex-middle uk-grid-small" uk-grid>
+                                        <div class="uk-width-expand">
+                                            <div class="tracuu__box1__txt1">Tên</div>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <div class="tracuu__box1__txt1">Nguyễn Khắc Anh Quân</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tracuu__box1__item2">
+                                    <div class="uk-flex-middle uk-grid-small" uk-grid>
+                                        <div class="uk-width-expand">
+                                            <div class="tracuu__box1__txt1">Số giấy chứng nhận</div>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <div class="tracuu__box1__txt2">0201+22898727</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tracuu__box1__item2">
+                                    <div class="uk-flex-middle uk-grid-small" uk-grid>
+                                        <div class="uk-width-expand">
+                                            <div class="tracuu__box1__txt1">Hiệu lực</div>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <div class="tracuu__box1__txt1">15/02/2021 - 15/02/2022</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tracuu__box1__item">
+                                <div class="uk-child-width-1-2 uk-grid-small" uk-grid>
+                                    <div>
+                                        <button class="uk-button tracuu__box1__btn uk-button-default uk-border-pill uk-width-1-1"><span>Tải giấy chứng nhận</span></button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button tracuu__box1__btn uk-button-primary uk-border-pill uk-width-1-1"><span>Xem giấy chứng nhận</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tracuu__box1 uk-padding-small">
+                            <div class="tracuu__box1__item">
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <img class="tracuu__box1__img" src="images/tracuu/family12.png" alt="">
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <div class="tracuu__box1__title">Bảo hiểm sức khỏe</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tracuu__box1__item">
+                                <div class="tracuu__box1__item2">
+                                    <div class="uk-flex-middle uk-grid-small" uk-grid>
+                                        <div class="uk-width-expand">
+                                            <div class="tracuu__box1__txt1">Tên</div>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <div class="tracuu__box1__txt1">Nguyễn Khắc Anh Quân</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tracuu__box1__item2">
+                                    <div class="uk-flex-middle uk-grid-small" uk-grid>
+                                        <div class="uk-width-expand">
+                                            <div class="tracuu__box1__txt1">Số giấy chứng nhận</div>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <div class="tracuu__box1__txt2">0201+22898727</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tracuu__box1__item2">
+                                    <div class="uk-flex-middle uk-grid-small" uk-grid>
+                                        <div class="uk-width-expand">
+                                            <div class="tracuu__box1__txt1">Hiệu lực</div>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <div class="tracuu__box1__txt1">15/02/2021 - 15/02/2022</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tracuu__box1__item">
+                                <div class="uk-child-width-1-2 uk-grid-small" uk-grid>
+                                    <div>
+                                        <button class="uk-button tracuu__box1__btn uk-button-default uk-border-pill uk-width-1-1"><span>Tải giấy chứng nhận</span></button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button tracuu__box1__btn uk-button-primary uk-border-pill uk-width-1-1"><span>Xem giấy chứng nhận</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tracuu__box1 uk-padding-small">
+                            <div class="tracuu__box1__item">
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <img class="tracuu__box1__img" src="images/tracuu/family12.png" alt="">
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <div class="tracuu__box1__title">Bảo hiểm sức khỏe</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tracuu__box1__item">
+                                <div class="tracuu__box1__item2">
+                                    <div class="uk-flex-middle uk-grid-small" uk-grid>
+                                        <div class="uk-width-expand">
+                                            <div class="tracuu__box1__txt1">Tên</div>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <div class="tracuu__box1__txt1">Nguyễn Khắc Anh Quân</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tracuu__box1__item2">
+                                    <div class="uk-flex-middle uk-grid-small" uk-grid>
+                                        <div class="uk-width-expand">
+                                            <div class="tracuu__box1__txt1">Số giấy chứng nhận</div>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <div class="tracuu__box1__txt2">0201+22898727</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tracuu__box1__item2">
+                                    <div class="uk-flex-middle uk-grid-small" uk-grid>
+                                        <div class="uk-width-expand">
+                                            <div class="tracuu__box1__txt1">Hiệu lực</div>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <div class="tracuu__box1__txt1">15/02/2021 - 15/02/2022</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tracuu__box1__item">
+                                <div class="uk-child-width-1-2 uk-grid-small" uk-grid>
+                                    <div>
+                                        <button class="uk-button tracuu__box1__btn uk-button-default uk-border-pill uk-width-1-1"><span>Tải giấy chứng nhận</span></button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button tracuu__box1__btn uk-button-primary uk-border-pill uk-width-1-1"><span>Xem giấy chứng nhận</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer uk-section uk-light">
+        <div class="uk-container">
+            <div class="" uk-grid>
+                <div class="uk-width-auto@m footer__w1">
+                    <div class="item__30">
+                        <img src="images/logo_f.png" alt="">
+                    </div>
+                    <div class="item__30">
+                        <div class="uk-grid-small uk-grid-50-s" uk-grid>
+                            <div class="uk-width-1-1@m uk-width-1-2@s">
+                                <ul class="uk-list footer__listAddress">
+                                    <li class="footer__listAddress__li footer__listAddress__map">Tầng 10 -11, tòa nhà 126 Đội Cấn Quận Ba Đình, Hà Nội</li>
+                                    <li class="footer__listAddress__li footer__listAddress__map">Số 243A Đê La Thành, Láng Thượng, Đống Đa, Hà Nội</li>
+                                    <li class="footer__listAddress__li footer__listAddress__phone">1900.1566</li>
+                                </ul>
+                            </div>
+                            <div class="uk-width-1-1@m uk-width-1-2@s">
+                                <div class="item__16">
+                                    <div>Tải xuống ứng dụng của VBI</div>
+                                </div>
+                                <div class="item__16">
+                                    <div class="uk-flex-middle uk-grid-medium" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <img src="images/qrcode.png" alt="">
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="uk-flex-middle uk-grid-10" uk-grid>
+                                                <div>
+                                                    <a href=""><img src="images/googleplay.png" alt=""></a>
+                                                </div>
+                                                <div>
+                                                    <a href=""><img src="images/appstore.png" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-1-1@m uk-width-1-2@s uk-visible@m">
+                                <div class="item__16">
+                                    <div>Theo dõi VBI qua mạng xã hội</div>
+                                </div>
+                                <div class="item__16">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-expand">
+                    <div class="item__32">
+                        <div class="uk-child-width-1-4@m" uk-grid>
+                            <div>
+                                <div class="item__12">
+                                    <div class="footer__title2">Công ty</div>
+                                </div>
+                                <div class="item__12">
+                                    <ul class="footer__nav uk-nav uk-nav-default">
+                                        <li><a href="#">Về chúng tôi</a></li>
+                                        <li><a href="#">Ban giám đốc</a></li>
+                                        <li><a href="#">Cơ hội nghề nghiệp</a></li>
+                                        <li><a href="#">Quan hệ đối tác</a></li>
+                                        <li><a href="#">Sơ đồ trang web</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="item__12">
+                                    <div class="footer__title2">Hỗ trợ</div>
+                                </div>
+                                <div class="item__12">
+                                    <ul class="footer__nav uk-nav uk-nav-default">
+                                        <li><a href="">Dịch vụ khách hàng</a></li>
+                                        <li><a href="">Yêu cầu bồi thường</a></li>
+                                        <li><a href="">Câu hỏi thường gặp</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="item__12">
+                                    <div class="footer__title2">Tiện ích</div>
+                                </div>
+                                <div class="item__12">
+                                    <ul class="footer__nav uk-nav uk-nav-default">
+                                        <li><a href="">Mã thanh toán</a></li>
+                                        <li><a href="">Garage gần bạn</a></li>
+                                        <li><a href="">Bệnh viện bảo lãnh</a></li>
+                                        <li><a href="">Liên hệ CSGT</a></li>
+                                        <li><a href="">Trung tâm đăng kiểm</a></li>
+                                        <li><a href="">Trung tâm cứu hộ</a></li>
+                                        <li><a href="">VBI Gần bạn</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item__32">
+                        <div class="item__16">
+                            <div class="footer__title2">Sản phẩm bảo hiểm</div>
+                        </div>
+                        <div class="item__16">
+                            <div uk-grid>
+                                <div class="uk-width-expand">
+                                    <div class="item__16">
+                                        <div class="footer__title3">Sản phẩm cho bạn và gia đình</div>
+                                    </div>
+                                    <div class="item__16">
+                                        <div class="uk-child-width-1-3@m" uk-grid>
+                                            <div>
+                                                <ul class="footer__nav uk-nav uk-nav-default">
+                                                    <li><a href="">Bảo hiểm Sức khỏe</a></li>
+                                                    <li><a href="">Bảo hiểm ung thư</a></li>
+                                                    <li><a href="">Bảo hiểm ung thư vú</a></li>
+                                                    <li><a href="">Bảo hiểm vì cộng đồng</a></li>
+                                                    <li><a href="">Bảo hiểm Tai nạn con người</a></li>
+                                                    <li><a href="">Bảo hiểm sốt xuất huyết</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="footer__nav uk-nav uk-nav-default">
+                                                    <li><a href="">Bảo hiểm vật chất ô tô</a></li>
+                                                    <li><a href="">Bảo hiểm vật chất xe máy</a></li>
+                                                    <li><a href="">Bảo hiểm TNDS ô tô</a></li>
+                                                    <li><a href="">Bảo hiểm TNDS xe máy</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="footer__nav uk-nav uk-nav-default">
+                                                    <li><a href="">Bảo hiểm nhà tư nhân</a></li>
+                                                    <li><a href="">Bảo hiểm du lịch nội địa</a></li>
+                                                    <li><a href="">Bảo hiểm du lịch quốc tế</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-4@m">
+                                    <div class="item__16">
+                                        <div class="footer__title3">Sản phẩm doanh nghiệp</div>
+                                    </div>
+                                    <div class="item__16">
+                                        <ul class="footer__nav uk-nav uk-nav-default">
+                                            <li><a href="">Sức khỏe nhân viên</a></li>
+                                            <li><a href="">Bảo hiểm xe cơ giới</a></li>
+                                            <li><a href="">Bảo hiểm tàu biển</a></li>
+                                            <li><a href="">Bảo vệ công trình xây dựng</a></li>
+                                            <li><a href="">Bảo hiểm trách nhiệm</a></li>
+                                            <li><a href="">Bảo hiểm năng lượng</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/app-->
+</body>
+</html>

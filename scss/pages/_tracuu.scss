@@ -1,4 +1,56 @@
 .tracuu{
+  &__box1{
+    background: #FAFAFB;
+    border-radius: 4px;
+    &__btn{
+      padding: 0 5px;
+      text-transform: inherit;
+      span{
+        @extend .fz-16;
+        font-family: $font-SF-Pro-Display-Medium;
+      }
+      &.uk-button-default{
+        background: #FFF0F6;
+        border-color: #FFF0F6;
+        color: #FF61A3;
+      }
+      &.uk-button-primary{
+        background: #FF61A3;
+      }
+    }
+    &__item{
+      &:nth-child(n+2){
+        $x:10px;
+        margin-top: #{$x};
+      }
+    }
+    &__item2{
+      &:nth-child(n+2){
+        $x:10px;
+        margin-top: #{$x};
+      }
+    }
+    &__img{
+      width: 32px;
+      height: 32px;
+    }
+    &__title{
+      color: #2E3A5B;
+      line-height: 1.4;
+      @extend .fz-20;
+      font-family: $font-Roboto-Medium;
+    }
+    &__txt1{
+      @extend .fz-16;
+      color: #2E3A5B;
+      line-height: 1.5;
+    }
+    &__txt2{
+      @extend .fz-14;
+      color: #2E3A5B;
+      line-height: 1.43;
+    }
+  }
   &__btnSubmit{
     $x:48px;
     line-height: calc(#{$x} - 2px);
@@ -16,6 +68,9 @@
   }
   &__boxTop46{
     margin-top: 46px;
+  }
+  &__boxTop40{
+    margin-top: 40px;
   }
   &__txt1{
     color: #2E3A5B;
