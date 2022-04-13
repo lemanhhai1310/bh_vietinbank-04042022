@@ -5,6 +5,8 @@
     &__btn{
       padding: 0 5px;
       text-transform: inherit;
+      max-width: 200px;
+      width: 100%;
       span{
         @extend .fz-16;
         font-family: $font-SF-Pro-Display-Medium;
