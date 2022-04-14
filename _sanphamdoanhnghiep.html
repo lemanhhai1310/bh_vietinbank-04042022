@@ -1,10 +1,518 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
+    <script src="/__prepros.js"></script>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bảo hiểm VietinBank - 1. Sản phẩm doanh nghiệp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1649947197">
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
+    <script src="js/app.js?v=1649947197"></script>
 </head>
-<body>
+<body class="not_home">
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="2428809380682169"
+     logged_in_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi"
+     logged_out_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi">
+</div>
+<script>
+    defer(function() {
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v5.0'
+            });
+        };
 
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    }, 5000);
+</script><!--app-->
+<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+    <div class="header__bottom" uk-sticky>
+        <div class="uk-container uk-padding-remove">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a href="." class="uk-navbar-item uk-logo"><img class="header__bottom__logoImg" src="images/logo.png" alt=""></a>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#">Trang chủ</a></li>
+                        <li><a href="congty_about.php">Công ty</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="boithuong.php">Bồi thường</a></li>
+                        <li><a href="#">Gia hạn hợp đồng</a></li>
+                    </ul>
+                    <div class="uk-navbar-item">
+                        <a href="#" class="header__bottom__txtUnderline">Trở thành đại lý</a>
+                    </div>
+                    <a href="" class="uk-navbar-item">
+                        <span class="header__top__cartIcon"></span>
+                    </a>
+                    <div class="uk-navbar-item">
+                        <a href="" class="header__top__btnLogin uk-button uk-button-default uk-border-pill"><span>Đăng nhập</span></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--breadcrumb-->
+    <div class="uk-section-xsmall uk-overflow-auto breadcrumb__section" uk-sticky="offset: 60;media:(max-width: 959px)">
+        <div class="uk-container uk-padding-remove">
+            <ul class="uk-breadcrumb uk-flex uk-flex-nowrap">
+                <li><a href=".">Trang chủ</a></li>
+                <li><a href="">Bảo hiểm cho doanh nghiệp</a></li>
+                <li><span>Bảo hiểm sức khoẻ An Phát</span></li>
+            </ul>
+        </div>
+    </div>
+    <!--/breadcrumb--><div class="about__section1 sanphamdoanhnghiep__bg uk-background-norepeat uk-flex uk-flex-middle uk-background-bottom-center">
+    <div class="uk-width-1-1 uk-section-xsmall">
+        <div class="uk-container">
+            <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Bảo hiểm sức khỏe <br class="uk-visible@m">
+                cho nhân viên VBI An Phát</h2>
+        </div>
+    </div>
+</div>
+
+    <!--Bảo hiểm sức khỏe cho nhân viên-->
+    <div class="uk-section sanphamdoanhnghiep__bhchonhanvien__section">
+        <div class="uk-container">
+            <div class="item__32">
+                <div class="item__24">
+                    <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Bảo hiểm sức khỏe cho nhân viên</h2>
+                </div>
+                <div class="item__24 uk-text-center">
+                    <div class="sanphamdoanhnghiep__bhchonhanvien__txt">
+                        VBI An Phát là sản phẩm bảo hiểm chăm sóc sức khỏe toàn diện với <br class="uk-visible@m">
+                        các quyền lợi bảo hiểm bảo hiểm thiết thực và là giải pháp hỗ trợ quản <br class="uk-visible@m">
+                        lý nguồn nhân lực và tài chính cho doanh nghiệp
+                    </div>
+                </div>
+            </div>
+            <div class="item__32 uk-text-center">
+                <div class="item__16">
+                    <a href="" class="sanphamdoanhnghiep__dacdiemuuviet__btn sanphamdoanhnghiep__dacdiemuuviet__btn--c1 uk-border-pill uk-button uk-button-default"><span>Chi tiết quyền lợi sản phẩm</span></a>
+                </div>
+                <div class="item__16">
+                    <a href="" class="sanphamdoanhnghiep__dacdiemuuviet__btn uk-border-pill uk-button uk-button-default"><span>Nhận báo giá</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Bảo hiểm sức khỏe cho nhân viên-->
+
+    <!--Điểm ưu việt của sản phẩm này là gì?-->
+    <div class="uk-section sanphamdoanhnghiep__dacdiemuuviet__section uk-background-muted">
+        <div class="uk-container">
+            <div class="item__32">
+                <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Điểm ưu việt của sản phẩm này là gì?</h2>
+            </div>
+            <div class="item__32">
+                <div class="item__52">
+                    <div class="uk-child-width-1-3@m uk-grid-row-medium uk-grid-small uk-flex-center" uk-grid>
+                        <div class="sanphamdoanhnghiep__dacdiemuuviet__column">
+                            <div class="item__16">
+                                <div class="uk-cover-container sanphamdoanhnghiep__dacdiemuuviet__boxImg">
+                                    <canvas width="390" height="207"></canvas>
+                                    <div class="uk-position-cover uk-flex uk-flex-center uk-flex-bottom">
+                                        <img src="images/sanphamdoanhnghiep/uuviet1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__16 uk-text-center">
+                                <div class="sanphamdoanhnghiep__dacdiemuuviet__txt">QUYỀN LỢI BẢO HIỂM TOÀN DIỆN</div>
+                            </div>
+                        </div>
+                        <div class="sanphamdoanhnghiep__dacdiemuuviet__column">
+                            <div class="item__16">
+                                <div class="uk-cover-container sanphamdoanhnghiep__dacdiemuuviet__boxImg">
+                                    <canvas width="390" height="207"></canvas>
+                                    <div class="uk-position-cover uk-flex uk-flex-center uk-flex-bottom">
+                                        <img src="images/sanphamdoanhnghiep/uuviet2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__16 uk-text-center">
+                                <div class="sanphamdoanhnghiep__dacdiemuuviet__txt">CHI PHÍ ƯU ĐÃI SO VỚI QUYỀN LỢI</div>
+                            </div>
+                        </div>
+                        <div class="sanphamdoanhnghiep__dacdiemuuviet__column">
+                            <div class="item__16">
+                                <div class="uk-cover-container sanphamdoanhnghiep__dacdiemuuviet__boxImg">
+                                    <canvas width="390" height="207"></canvas>
+                                    <div class="uk-position-cover uk-flex uk-flex-center uk-flex-bottom">
+                                        <img src="images/sanphamdoanhnghiep/uuviet3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__16 uk-text-center">
+                                <div class="sanphamdoanhnghiep__dacdiemuuviet__txt">BỒI THƯỜNG NHANH QUA APP MYVBI</div>
+                            </div>
+                        </div>
+                        <div class="sanphamdoanhnghiep__dacdiemuuviet__column">
+                            <div class="item__16">
+                                <div class="uk-cover-container sanphamdoanhnghiep__dacdiemuuviet__boxImg">
+                                    <canvas width="390" height="207"></canvas>
+                                    <div class="uk-position-cover uk-flex uk-flex-center uk-flex-bottom">
+                                        <img src="images/sanphamdoanhnghiep/uuviet4.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__16 uk-text-center">
+                                <div class="sanphamdoanhnghiep__dacdiemuuviet__txt">KHÁM CHỮA BỆNH TẠI CÁC CƠ SỞ Y TẾ HÀNG ĐẦU</div>
+                            </div>
+                        </div>
+                        <div class="sanphamdoanhnghiep__dacdiemuuviet__column">
+                            <div class="item__16">
+                                <div class="uk-cover-container sanphamdoanhnghiep__dacdiemuuviet__boxImg">
+                                    <canvas width="390" height="207"></canvas>
+                                    <div class="uk-position-cover uk-flex uk-flex-center uk-flex-bottom">
+                                        <img src="images/sanphamdoanhnghiep/uuviet5.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__16 uk-text-center">
+                                <div class="sanphamdoanhnghiep__dacdiemuuviet__txt">THỜI GIAN CHỜ NGẮN, BẢO VỆ NHỮNG BỆNH CÓ SẴN</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item__52 uk-text-center">
+                    <a href="" class="sanphamdoanhnghiep__dacdiemuuviet__btn uk-border-pill uk-button uk-button-default"><span>Nhận báo giá</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Điểm ưu việt của sản phẩm này là gì?-->
+
+    <!--VBI luôn sẵn sàng giải thích và tư vấn cho bạn-->
+    <div class="uk-section sanphamdoanhnghiep__luonsansang__section">
+        <div class="uk-container">
+            <div class="item__32">
+                <div class="item__14">
+                    <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">VBI luôn sẵn sàng giải thích và tư vấn cho bạn</h2>
+                </div>
+                <div class="item__14 uk-text-center">
+                    <div class="sanphamdoanhnghiep__luonsansang__txt">
+                        Mọi thắc mắc của bạn sẽ đều được VBI giải thích và hỗ trợ 24/7 <br class="uk-visible@m">
+                        Vui lòng để lại tên và số điện thoại để chúng tôi liên lạc với bạn.
+                    </div>
+                </div>
+            </div>
+            <div class="item__32">
+                <div class="uk-flex-center" uk-grid>
+                    <div class="uk-width-auto@m sanphamdoanhnghiep__luonsansang__boxForm">
+                        <div class="">
+                            <div class="item__16">
+                                <input class="uk-input sanphamdoanhnghiep__luonsansang__boxForm__input" type="text" placeholder="Họ và tên">
+                            </div>
+                            <div class="item__16">
+                                <input class="uk-input sanphamdoanhnghiep__luonsansang__boxForm__input" type="text" placeholder="Số điện thoại">
+                            </div>
+                            <div class="item__16 uk-text-center">
+                                <a href="" class="sanphamdoanhnghiep__dacdiemuuviet__btn uk-border-pill uk-button uk-button-default"><span>Gửi thông tin</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/VBI luôn sẵn sàng giải thích và tư vấn cho bạn-->
+
+    <!--Câu hỏi thường gặp-->
+    <div class="uk-section uk-background-muted boithuong__blockCauhoithuonggap__section">
+        <div class="uk-container">
+            <div class="item__38">
+                <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Câu hỏi thường gặp</h2>
+            </div>
+            <div class="item__38">
+                <div class="uk-flex-center" uk-grid>
+                    <div class="uk-width-4-5@m">
+                        <ul uk-accordion="">
+                            <li class="block_cauhoithuonggap__accordion__li uk-open">
+                                <a class="uk-accordion-title block_cauhoithuonggap__accordion__title" href="#">1. Hợp đồng bảo hiểm sẽ được gửi đến khách hàng như thế nào</a>
+                                <div class="uk-accordion-content block_cauhoithuonggap__accordion__content">
+                                    <div class="block_cauhoithuonggap__accordion__box">
+                                        <p>"Khi mua và thanh toán thành công sản phẩm bảo hiểm sức khỏe, khách hàng sẽ được cấp giấy chứng nhận bảo hiểm điện tử do VBI phát hành qua email đã đăng ký.</p>
+                                        <p>Giấy chứng nhận điện tử có đầy đủ giá trị pháp lý theo quy định tại Nghị định 52/2013/NĐ-CP ngày 16/05/2013 của Chính phủ về Thương mại điện tử. Khách hàng cũng có thể truy cập về thông tin giấy chứng nhận và quyền lợi bảo hiểm trên App My VBI."</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="block_cauhoithuonggap__accordion__li">
+                                <a class="uk-accordion-title block_cauhoithuonggap__accordion__title" href="#">2. Ưu điểm của bảo hiểm sức khỏe VBI care là gì?</a>
+                                <div class="uk-accordion-content block_cauhoithuonggap__accordion__content">
+                                    <div class="block_cauhoithuonggap__accordion__box">
+                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="block_cauhoithuonggap__accordion__li">
+                                <a class="uk-accordion-title block_cauhoithuonggap__accordion__title" href="#">3. Tại sao nên mua bảo hiểm online?</a>
+                                <div class="uk-accordion-content block_cauhoithuonggap__accordion__content">
+                                    <div class="block_cauhoithuonggap__accordion__box">
+                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="block_cauhoithuonggap__accordion__li">
+                                <a class="uk-accordion-title block_cauhoithuonggap__accordion__title" href="#">4. Bảo hiểm VBI care cho phép khám chữa bệnh ở những bệnh viện nào?</a>
+                                <div class="uk-accordion-content block_cauhoithuonggap__accordion__content">
+                                    <div class="block_cauhoithuonggap__accordion__box">
+                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="block_cauhoithuonggap__accordion__li">
+                                <a class="uk-accordion-title block_cauhoithuonggap__accordion__title" href="#">5. Thời gian chờ là gì?</a>
+                                <div class="uk-accordion-content block_cauhoithuonggap__accordion__content">
+                                    <div class="block_cauhoithuonggap__accordion__box">
+                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="block_cauhoithuonggap__accordion__li">
+                                <a class="uk-accordion-title block_cauhoithuonggap__accordion__title" href="#">6. Bệnh có sẵn là gì?</a>
+                                <div class="uk-accordion-content block_cauhoithuonggap__accordion__content">
+                                    <div class="block_cauhoithuonggap__accordion__box">
+                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Câu hỏi thường gặp-->
+    <div class="block_taiapp__gradient uk-light uk-overflow-hidden">
+        <div class="block_taiapp__section uk-section uk-background-norepeat uk-background-cover" data-src="images/MaskGroup.png" uk-img>
+            <div class="uk-container">
+                <div class="item__32">
+                    <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Tải ứng ụng app MyVBI</h2>
+                </div>
+                <div class="item__32">
+                    <div uk-grid>
+                        <div class="uk-width-expand">
+                            <div class="">
+                                <div class="item__32">
+                                    <div class="item__16">
+                                        <div class="block_taiapp__name">Tại sao bạn cần tải app My VBI?</div>
+                                    </div>
+                                    <div class="item__16">
+                                        <ul class="uk-list block_taiapp__list">
+                                            <li class="block_taiapp__list__li">Hỗ trợ bạn mọi nơi và mọi lúc</li>
+                                            <li class="block_taiapp__list__li">Lưu trữ tất cả chính sách bảo hiểm</li>
+                                            <li class="block_taiapp__list__li">Các tiện ích giúp bạn trong cuộc sống</li>
+                                            <li class="block_taiapp__list__li">Chủ động khai báo và theo dõi tiến trình xử lý online</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item__32">
+                                    <div class="uk-flex-middle uk-grid-medium" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <img src="images/qrcode.png" alt="">
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="uk-flex-middle uk-child-width-auto@s uk-grid-small" uk-grid>
+                                                <div>
+                                                    <a href=""><img src="images/googleplay.png" alt=""></a>
+                                                </div>
+                                                <div>
+                                                    <a href=""><img src="images/appstore.png" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-auto@m uk-visible@m">
+                            <img uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false" src="images/intro_app.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><div class="footer uk-section uk-light">
+    <div class="uk-container">
+        <div class="" uk-grid>
+            <div class="uk-width-auto@m footer__w1">
+                <div class="item__30">
+                    <img src="images/logo_f.png" alt="">
+                </div>
+                <div class="item__30">
+                    <div class="uk-grid-small uk-grid-50-s" uk-grid>
+                        <div class="uk-width-1-1@m uk-width-1-2@s">
+                            <ul class="uk-list footer__listAddress">
+                                <li class="footer__listAddress__li footer__listAddress__map">Tầng 10 -11, tòa nhà 126 Đội Cấn Quận Ba Đình, Hà Nội</li>
+                                <li class="footer__listAddress__li footer__listAddress__map">Số 243A Đê La Thành, Láng Thượng, Đống Đa, Hà Nội</li>
+                                <li class="footer__listAddress__li footer__listAddress__phone">1900.1566</li>
+                            </ul>
+                        </div>
+                        <div class="uk-width-1-1@m uk-width-1-2@s">
+                            <div class="item__16">
+                                <div>Tải xuống ứng dụng của VBI</div>
+                            </div>
+                            <div class="item__16">
+                                <div class="uk-flex-middle uk-grid-medium" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <img src="images/qrcode.png" alt="">
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <div class="uk-flex-middle uk-grid-10" uk-grid>
+                                            <div>
+                                                <a href=""><img src="images/googleplay.png" alt=""></a>
+                                            </div>
+                                            <div>
+                                                <a href=""><img src="images/appstore.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-1@m uk-width-1-2@s uk-visible@m">
+                            <div class="item__16">
+                                <div>Theo dõi VBI qua mạng xã hội</div>
+                            </div>
+                            <div class="item__16">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-expand">
+                <div class="item__32">
+                    <div class="uk-child-width-1-4@m" uk-grid>
+                        <div>
+                            <div class="item__12">
+                                <div class="footer__title2">Công ty</div>
+                            </div>
+                            <div class="item__12">
+                                <ul class="footer__nav uk-nav uk-nav-default">
+                                    <li><a href="#">Về chúng tôi</a></li>
+                                    <li><a href="#">Ban giám đốc</a></li>
+                                    <li><a href="#">Cơ hội nghề nghiệp</a></li>
+                                    <li><a href="#">Quan hệ đối tác</a></li>
+                                    <li><a href="#">Sơ đồ trang web</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item__12">
+                                <div class="footer__title2">Hỗ trợ</div>
+                            </div>
+                            <div class="item__12">
+                                <ul class="footer__nav uk-nav uk-nav-default">
+                                    <li><a href="">Dịch vụ khách hàng</a></li>
+                                    <li><a href="">Yêu cầu bồi thường</a></li>
+                                    <li><a href="">Câu hỏi thường gặp</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item__12">
+                                <div class="footer__title2">Tiện ích</div>
+                            </div>
+                            <div class="item__12">
+                                <ul class="footer__nav uk-nav uk-nav-default">
+                                    <li><a href="">Mã thanh toán</a></li>
+                                    <li><a href="">Garage gần bạn</a></li>
+                                    <li><a href="">Bệnh viện bảo lãnh</a></li>
+                                    <li><a href="">Liên hệ CSGT</a></li>
+                                    <li><a href="">Trung tâm đăng kiểm</a></li>
+                                    <li><a href="">Trung tâm cứu hộ</a></li>
+                                    <li><a href="">VBI Gần bạn</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item__32">
+                    <div class="item__16">
+                        <div class="footer__title2">Sản phẩm bảo hiểm</div>
+                    </div>
+                    <div class="item__16">
+                        <div uk-grid>
+                            <div class="uk-width-expand">
+                                <div class="item__16">
+                                    <div class="footer__title3">Sản phẩm cho bạn và gia đình</div>
+                                </div>
+                                <div class="item__16">
+                                    <div class="uk-child-width-1-3@m" uk-grid>
+                                        <div>
+                                            <ul class="footer__nav uk-nav uk-nav-default">
+                                                <li><a href="">Bảo hiểm Sức khỏe</a></li>
+                                                <li><a href="">Bảo hiểm ung thư</a></li>
+                                                <li><a href="">Bảo hiểm ung thư vú</a></li>
+                                                <li><a href="">Bảo hiểm vì cộng đồng</a></li>
+                                                <li><a href="">Bảo hiểm Tai nạn con người</a></li>
+                                                <li><a href="">Bảo hiểm sốt xuất huyết</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="footer__nav uk-nav uk-nav-default">
+                                                <li><a href="">Bảo hiểm vật chất ô tô</a></li>
+                                                <li><a href="">Bảo hiểm vật chất xe máy</a></li>
+                                                <li><a href="">Bảo hiểm TNDS ô tô</a></li>
+                                                <li><a href="">Bảo hiểm TNDS xe máy</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="footer__nav uk-nav uk-nav-default">
+                                                <li><a href="">Bảo hiểm nhà tư nhân</a></li>
+                                                <li><a href="">Bảo hiểm du lịch nội địa</a></li>
+                                                <li><a href="">Bảo hiểm du lịch quốc tế</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-1-4@m">
+                                <div class="item__16">
+                                    <div class="footer__title3">Sản phẩm doanh nghiệp</div>
+                                </div>
+                                <div class="item__16">
+                                    <ul class="footer__nav uk-nav uk-nav-default">
+                                        <li><a href="">Sức khỏe nhân viên</a></li>
+                                        <li><a href="">Bảo hiểm xe cơ giới</a></li>
+                                        <li><a href="">Bảo hiểm tàu biển</a></li>
+                                        <li><a href="">Bảo vệ công trình xây dựng</a></li>
+                                        <li><a href="">Bảo hiểm trách nhiệm</a></li>
+                                        <li><a href="">Bảo hiểm năng lượng</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--/app-->
 </body>
 </html>
