@@ -27,6 +27,12 @@
               url("images/bg_left.png") no-repeat top left,
               url("images/home/Group8098.png") no-repeat top right;
       min-height: 648px;
+      @include media-breakpoint-up('l'){
+        background-size: 19%;
+      }
+      @include media-breakpoint-up('xl'){
+        background-size: inherit;
+      }
       .uk-container-small{
         max-width: 796px;
       }
