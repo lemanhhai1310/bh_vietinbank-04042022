@@ -1,5 +1,14 @@
 .tracuu{
   &__boithuong{
+    &__list1{
+      >li{
+        color: #2E3A5B;
+        @extend .fz-16;
+        &.uk-active{
+          color: #FF61A3;
+        }
+      }
+    }
     &__btn{
       background: #FF61A3;
       border-color: #FF61A3;

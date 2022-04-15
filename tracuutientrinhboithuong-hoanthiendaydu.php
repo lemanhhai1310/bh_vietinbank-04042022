@@ -147,9 +147,9 @@ require "template-parts/layouts/navbar-menu.php"; ?>
                                 </div>
                             </div>
                             <div>
-                                <ul class="uk-list uk-list-bullet uk-margin-remove">
+                                <ul class="uk-list tracuu__boithuong__list1 uk-list-bullet uk-margin-remove">
                                     <li>Tiếp nhận yêu cầu</li>
-                                    <li>Xử lý yêu cầu</li>
+                                    <li class="uk-active">Xử lý yêu cầu</li>
                                     <li>Thông báo phương án</li>
                                     <li>Thanh toán bồi thường</li>
                                 </ul>
