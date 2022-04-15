@@ -47,10 +47,25 @@
       color: #2E3A5B;
       line-height: 1.5;
     }
+    &__txtLeft{
+      @extend .fz-16;
+      color: #596481;
+      line-height: 1.5;
+    }
     &__txt2{
       @extend .fz-14;
       color: #2E3A5B;
       line-height: 1.43;
+    }
+    &__status{
+      @extend .fz-16;
+      line-height: 1.5;
+      &--dangxuly{
+        color: #FF5B5B;
+      }
+      &--boithuong{
+        color: #3382BF;
+      }
     }
   }
   &__btnSubmit{
