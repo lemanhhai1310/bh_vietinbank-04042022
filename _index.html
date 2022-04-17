@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -10,14 +9,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css" />
-    <link rel="stylesheet" href="style.css?v=1649687241">
+    <link rel="stylesheet" href="style.css?v=1650216905">
     <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
-    <script src="js/app.js?v=1649687241"></script>
+    <script src="js/app.js?v=1650216905"></script>
 </head>
 <body class="">
 <!-- Load Facebook SDK for JavaScript -->
@@ -48,7 +47,20 @@
     }, 5000);
 </script><!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
-    <div class="header__top">
+    <div id="offcanvas-flip-menu" class="menuMobile" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar menuMobile__bar">
+            <button class="uk-offcanvas-close menuMobile__close" type="button" uk-close></button>
+            <ul class="menuMobile__nav uk-nav-default uk-nav-parent-icon uk-nav-divider" uk-nav="multiple: true;toggle: .menuMobile__nav__icon" uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
+                <li class="uk-active"><a href="#">Trang chủ</a></li>
+                <li><a href="congty_about.php">Công ty</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="boithuong.php">Bồi thường</a></li>
+                <li><a href="#">Gia hạn hợp đồng</a></li>
+                <li><a href="#" class="header__bottom__txtUnderline">Trở thành đại lý</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header__top uk-visible@m">
         <div class="uk-container">
             <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
                 <div class="uk-navbar-right">
@@ -69,20 +81,27 @@
         <div class="uk-container uk-padding-remove">
             <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
                 <div class="uk-navbar-left">
-                    <a href="." class="uk-navbar-item uk-logo"><img class="header__bottom__logoImg" src="images/logo.png" alt=""></a>
+                    <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#offcanvas-flip-menu" uk-toggle></a>
+                    <a href="." class="uk-navbar-item uk-logo uk-visible@m"><img class="header__bottom__logoImg" src="images/logo.png" alt=""></a>
+                    <a href="." class="uk-navbar-item uk-logo uk-hidden@m"><img class="header__bottom__logoImg" src="images/Logo_m.png" alt=""></a>
                 </div>
                 <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav">
+                    <ul class="uk-navbar-nav uk-visible@m">
                         <li class="uk-active"><a href="#">Trang chủ</a></li>
                         <li><a href="congty_about.php">Công ty</a></li>
                         <li><a href="#">Sản phẩm</a></li>
                         <li><a href="boithuong.php">Bồi thường</a></li>
                         <li><a href="#">Gia hạn hợp đồng</a></li>
                     </ul>
-                    <div class="uk-navbar-item">
+                    <div class="uk-navbar-item uk-visible@m">
                         <a href="#" class="header__bottom__txtUnderline">Trở thành đại lý</a>
                     </div>
-
+                    <a href="" class="uk-navbar-item uk-hidden@m">
+                        <span class="header__top__cartIcon"></span>
+                    </a>
+                    <div class="uk-navbar-item uk-hidden@m">
+                        <a href="" class="header__top__btnLogin uk-button uk-button-default uk-border-pill"><span>Đăng nhập</span></a>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -95,7 +114,7 @@
                     <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Sản phẩm bảo hiểm được khách hàng quan tâm tại VBI</h2>
                 </div>
                 <div class="item__32">
-                    <div class="uk-child-width-expand@m uk-grid-small" uk-grid>
+                    <div class="uk-child-width-1-3 uk-child-width-expand@m uk-grid-small" uk-grid>
                         <div>
                             <div class="uk-text-center home__block01__box">
                                 <div class="home__block01__box1 uk-cover-container item__16 uk-background-norepeat uk-background-center-center" data-src="images/sanpham/family.png" uk-img>
