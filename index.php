@@ -9,7 +9,7 @@
                 <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Sản phẩm bảo hiểm được khách hàng quan tâm tại VBI</h2>
             </div>
             <div class="item__32">
-                <div class="uk-child-width-expand@m uk-grid-small" uk-grid>
+                <div class="uk-child-width-1-3 uk-child-width-expand@m uk-grid-small" uk-grid>
                     <?php
                     $data = array(
                         array(
