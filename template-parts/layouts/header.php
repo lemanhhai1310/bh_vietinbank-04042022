@@ -23,7 +23,7 @@
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
 <?php if (isset($home) && $home): ?>
-    <div class="header__top">
+    <div class="header__top uk-visible@m">
         <div class="uk-container">
             <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
                 <div class="uk-navbar-right">
@@ -45,21 +45,28 @@
     <div class="uk-container uk-padding-remove">
         <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
             <div class="uk-navbar-left">
-                <a href="." class="uk-navbar-item uk-logo"><img class="header__bottom__logoImg" src="images/logo.png" alt=""></a>
+                <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#"></a>
+                <a href="." class="uk-navbar-item uk-logo uk-visible@m"><img class="header__bottom__logoImg" src="images/logo.png" alt=""></a>
+                <a href="." class="uk-navbar-item uk-logo uk-hidden@m"><img class="header__bottom__logoImg" src="images/Logo_m.png" alt=""></a>
             </div>
             <div class="uk-navbar-right">
-                <ul class="uk-navbar-nav">
+                <ul class="uk-navbar-nav uk-visible@m">
                     <li class="uk-active"><a href="#">Trang chủ</a></li>
                     <li><a href="congty_about.php">Công ty</a></li>
                     <li><a href="#">Sản phẩm</a></li>
                     <li><a href="boithuong.php">Bồi thường</a></li>
                     <li><a href="#">Gia hạn hợp đồng</a></li>
                 </ul>
-                <div class="uk-navbar-item">
+                <div class="uk-navbar-item uk-visible@m">
                     <a href="#" class="header__bottom__txtUnderline">Trở thành đại lý</a>
                 </div>
                 <?php if (isset($home) && $home): ?>
-
+                    <a href="" class="uk-navbar-item uk-hidden@m">
+                        <span class="header__top__cartIcon"></span>
+                    </a>
+                    <div class="uk-navbar-item uk-hidden@m">
+                        <a href="" class="header__top__btnLogin uk-button uk-button-default uk-border-pill"><span>Đăng nhập</span></a>
+                    </div>
                 <?php else: ?>
                     <a href="" class="uk-navbar-item">
                         <span class="header__top__cartIcon"></span>
