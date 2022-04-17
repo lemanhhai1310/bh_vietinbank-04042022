@@ -1,0 +1,39 @@
+.danhbacsgt{
+  &__section{
+
+  }
+  &__box{
+    background: #FAFAFB;
+    border-radius: 8px;
+    //min-height: 164px;
+    padding: 16px;
+    @include media-breakpoint-up('m'){
+      padding: 24px;
+    }
+    &__item{
+      &:nth-child(n+2){
+        margin-top: 6px;
+      }
+    }
+    &__txt1{
+      color: #596481;
+      @extend .fz-16;
+    }
+    &__txt2{
+      color: #2E3A5B;
+      @extend .fz-16;
+      font-family: $font-Roboto-Medium;
+    }
+    &__btn{
+      background: #FFF0F6;
+      border-color: #FFF0F6;
+      border-radius: 16px;
+      color: #FF61A3;
+      text-transform: inherit;
+      span{
+        @extend .fz-16;
+        font-family: $font-SF-Pro-Display-Medium;
+      }
+    }
+  }
+}
