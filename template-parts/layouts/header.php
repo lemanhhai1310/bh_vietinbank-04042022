@@ -22,6 +22,19 @@
 <?php require "template-parts/commons/facebook_chat.php"; ?>
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+<div id="offcanvas-flip-menu" class="menuMobile" uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar menuMobile__bar">
+        <button class="uk-offcanvas-close menuMobile__close" type="button" uk-close></button>
+        <ul class="menuMobile__nav uk-nav-default uk-nav-parent-icon uk-nav-divider" uk-nav="multiple: true;toggle: .menuMobile__nav__icon" uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
+            <li class="uk-active"><a href="#">Trang chủ</a></li>
+            <li><a href="congty_about.php">Công ty</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="boithuong.php">Bồi thường</a></li>
+            <li><a href="#">Gia hạn hợp đồng</a></li>
+            <li><a href="#" class="header__bottom__txtUnderline">Trở thành đại lý</a></li>
+        </ul>
+    </div>
+</div>
 <?php if (isset($home) && $home): ?>
     <div class="header__top uk-visible@m">
         <div class="uk-container">
@@ -45,7 +58,7 @@
     <div class="uk-container uk-padding-remove">
         <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
             <div class="uk-navbar-left">
-                <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#"></a>
+                <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#offcanvas-flip-menu" uk-toggle></a>
                 <a href="." class="uk-navbar-item uk-logo uk-visible@m"><img class="header__bottom__logoImg" src="images/logo.png" alt=""></a>
                 <a href="." class="uk-navbar-item uk-logo uk-hidden@m"><img class="header__bottom__logoImg" src="images/Logo_m.png" alt=""></a>
             </div>
