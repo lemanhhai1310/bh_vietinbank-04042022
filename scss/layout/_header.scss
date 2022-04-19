@@ -95,7 +95,10 @@
       display: flex;
       align-items: center;
       cursor: pointer;
-      padding-right: 22px;
+      padding-right: 15px;
+      @include media-breakpoint-up('m'){
+        padding-right: 22px;
+      }
       position: relative;
       background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline fill='none' stroke='%23000' stroke-width='1.03' points='16 7 10 13 4 7'%3E%3C/polyline%3E%3C/svg%3E");
       &[aria-expanded="true"]{
