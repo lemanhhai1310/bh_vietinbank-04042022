@@ -43,6 +43,19 @@
                     <div class="uk-navbar-item header__top__hotline">
                         <div>Hotline: 1900.1566</div>
                     </div>
+                    <div class="uk-navbar-item">
+                        <div class="uk-position-relative">
+                            <div class="header__top__flag" style="--background:url('images/vn31.png')">
+                                <span>Tiếng Việt</span>
+                            </div>
+                            <div class="uk-padding-small header__top__dropFlag" uk-dropdown="mode: click">
+                                <ul class="uk-nav">
+                                    <li class="uk-active"><a href="" style="--background: url('images/230px-Flag_of_North_Vietnam_(1955–1976).png')">Vietnamese</a></li>
+                                    <li><a href="" style="--background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Flag_of_the_United_States_%281847%E2%80%931848%29.svg/1200px-Flag_of_the_United_States_%281847%E2%80%931848%29.svg.png')">English</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                     <a href="" class="uk-navbar-item">
                         <span class="header__top__cartIcon"></span>
                     </a>
