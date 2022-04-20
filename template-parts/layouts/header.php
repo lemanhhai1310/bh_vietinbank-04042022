@@ -22,6 +22,26 @@
 <?php require "template-parts/commons/facebook_chat.php"; ?>
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+<div class="uk-position-center-right uk-position-fixed uk-position-small">
+    <div class="item__16">
+        <div class="iconFloat__box iconFloat__box--chat uk-cover-container uk-border-circle uk-background-default">
+            <canvas width="60" height="60"></canvas>
+            <a href="" class="uk-position-cover"></a>
+        </div>
+    </div>
+    <div class="item__16">
+        <div class="iconFloat__box iconFloat__box--phone uk-cover-container uk-border-circle uk-background-default">
+            <canvas width="60" height="60"></canvas>
+            <a href="" class="uk-position-cover"></a>
+        </div>
+    </div>
+    <div class="item__16">
+        <div class="iconFloat__box iconFloat__box--help uk-cover-container uk-border-circle uk-background-default">
+            <canvas width="60" height="60"></canvas>
+            <a href="" class="uk-position-cover"></a>
+        </div>
+    </div>
+</div>
 <div id="offcanvas-flip-menu" class="menuMobile" uk-offcanvas="flip: true; overlay: true">
     <div class="uk-offcanvas-bar menuMobile__bar">
         <button class="uk-offcanvas-close menuMobile__close" type="button" uk-close></button>
