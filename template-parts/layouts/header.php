@@ -22,7 +22,7 @@
 <?php require "template-parts/commons/facebook_chat.php"; ?>
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
-<div class="uk-position-center-right uk-position-fixed uk-position-small">
+<div class="uk-position-center-right uk-position-fixed uk-position-small uk-visible@m">
     <div class="item__16">
         <div class="iconFloat__box iconFloat__box--chat uk-cover-container uk-border-circle uk-background-default">
             <canvas width="60" height="60"></canvas>
