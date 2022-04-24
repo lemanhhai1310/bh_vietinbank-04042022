@@ -67,6 +67,13 @@
       padding: 0 30px;
       width: inherit;
     }
+    .home__blockNews__section &{
+      width: 100%;
+      max-width: 163px;
+      @include media-breakpoint-up('m'){
+        max-width: 187px;
+      }
+    }
   }
   &__accordion{
     &__li{

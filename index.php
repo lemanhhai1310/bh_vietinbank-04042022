@@ -9,7 +9,7 @@
                 <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Sản phẩm bảo hiểm được khách hàng quan tâm tại VBI</h2>
             </div>
             <div class="item__32">
-                <div class="uk-child-width-1-3 uk-child-width-expand@m uk-grid-small" uk-grid>
+                <div class="uk-child-width-1-3 uk-child-width-expand@s uk-grid-small" uk-grid>
                     <?php
                     $data = array(
                         array(
@@ -83,21 +83,84 @@
 <!--/Sản phẩm bảo hiểm được khách hàng quan tâm tại VBI-->
 <!--Bạn muốn bảo vệ gì hôm nay ?-->
 <div class="uk-section home__block02__section">
-    <div class="uk-container">
+    <div class="uk-container uk-padding-remove">
         <div class="item__32">
             <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Bạn muốn bảo vệ gì hôm nay ?</h2>
         </div>
         <div class="item__32">
             <div class="item__16">
-                <div class="home__block02__title">Bảo vệ bạn và gia đình</div>
+                <div class="uk-container">
+                    <div class="home__block02__title">Bảo vệ bạn và gia đình</div>
+                </div>
             </div>
             <div class="item__16">
-                <div uk-slider>
+                <div class="home__blockTienich__slider uk-hidden@m uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider="finite: true">
+
+                    <ul class="uk-slider-items uk-grid uk-grid-small">
+                        <?php
+                        $data = array(
+                            array(
+                                'src' => 'images/baovebanvagiadinh/heat.png',
+                                'txt' => 'Bảo vệ cho sức khỏe',
+                            ),
+                            array(
+                                'src' => 'images/baovebanvagiadinh/xecogioi.png',
+                                'txt' => 'Bảo vệ xe cơ giới',
+                            ),
+                            array(
+                                'src' => 'images/baovebanvagiadinh/medical-report1.png',
+                                'txt' => 'Bảo vệ trước bệnh hiểm nghèo',
+                            ),
+                            array(
+                                'src' => 'images/baovebanvagiadinh/tainan.png',
+                                'txt' => 'Bảo vệ trước tai nạn',
+                            ),
+                            array(
+                                'src' => 'images/baovebanvagiadinh/airplane1.png',
+                                'txt' => 'Bảo vệ khi đi du lịch',
+                            ),
+                            array(
+                                'src' => 'images/baovebanvagiadinh/vaccine1.png',
+                                'txt' => 'Bảo vệ trước dịch bệnh',
+                            ),
+                            array(
+                                'src' => 'images/baovebanvagiadinh/best-friend1.png',
+                                'txt' => 'Bảo vệ cho trẻ nhỏ',
+                            ),
+                            array(
+                                'src' => 'images/baovebanvagiadinh/heat.png',
+                                'txt' => 'Bảo vệ cho sức khỏe',
+                            ),
+                            array(
+                                'src' => 'images/baovebanvagiadinh/heat.png',
+                                'txt' => 'Bảo vệ cho sức khỏe',
+                            ),
+                        );
+                        foreach ($data as $k=>$v): ?>
+                            <li class="uk-width-auto home__block02__w7">
+                                <div class="uk-cover-container uk-padding-small home__block02__box">
+                                    <canvas width="142" height="142"></canvas>
+                                    <div class="uk-position-cover uk-padding-small uk-flex uk-flex-column uk-text-center">
+                                        <div class="uk-flex-1 uk-flex uk-flex-middle uk-flex-center">
+                                            <img src="<?= $v['src'] ?>" alt="">
+                                        </div>
+                                        <div class="uk-flex-1 home__block01__txt"><?= $v['txt'] ?></div>
+                                    </div>
+                                </div>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+
+                    <a class="home__slidenav home__slidenav--prev uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="home__slidenav home__slidenav--next uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+                </div>
+                <div class="uk-visible@m" uk-slider="autoplay: true; finite: true;">
 
                     <div class="uk-position-relative">
 
                         <div class="uk-slider-container">
-                            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-6@m uk-grid-small" uk-grid>
+                            <ul class="uk-slider-items uk-child-width-auto uk-grid-small" uk-grid>
                                 <?php
                                 $data = array(
                                     array(
@@ -138,17 +201,17 @@
                                     ),
                                 );
                                 foreach ($data as $k=>$v): ?>
-                                <li class="home__block02__w7">
-                                    <div class="uk-cover-container uk-padding-small home__block02__box">
-                                        <canvas width="142" height="142"></canvas>
-                                        <div class="uk-position-cover uk-padding-small uk-flex uk-flex-column uk-text-center">
-                                            <div class="uk-flex-1 uk-flex uk-flex-middle uk-flex-center">
-                                                <img src="<?= $v['src'] ?>" alt="">
+                                    <li class="home__block02__w7">
+                                        <div class="uk-cover-container uk-padding-small home__block02__box">
+                                            <canvas width="142" height="142"></canvas>
+                                            <div class="uk-position-cover uk-padding-small uk-flex uk-flex-column uk-text-center">
+                                                <div class="uk-flex-1 uk-flex uk-flex-middle uk-flex-center">
+                                                    <img src="<?= $v['src'] ?>" alt="">
+                                                </div>
+                                                <div class="uk-flex-1 home__block01__txt"><?= $v['txt'] ?></div>
                                             </div>
-                                            <div class="uk-flex-1 home__block01__txt"><?= $v['txt'] ?></div>
                                         </div>
-                                    </div>
-                                </li>
+                                    </li>
                                 <?php endforeach; ?>
                             </ul>
                         </div>
@@ -172,15 +235,78 @@
         </div>
         <div class="item__32">
             <div class="item__16">
-                <div class="home__block02__title">Bảo vệ doanh nghiệp của bạn</div>
+                <div class="uk-container">
+                    <div class="home__block02__title">Bảo vệ doanh nghiệp của bạn</div>
+                </div>
             </div>
             <div class="item__16">
-                <div uk-slider>
+                <div class="home__blockTienich__slider uk-hidden@m uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider="finite: true">
+
+                    <ul class="uk-slider-items uk-grid uk-grid-small">
+                        <?php
+                        $data = array(
+                            array(
+                                'src' => 'images/baovebanvagiadinh/heat.png',
+                                'txt' => 'Bảo vệ cho sức khỏe',
+                            ),
+                            array(
+                                'src' => 'images/baovebanvagiadinh/xecogioi.png',
+                                'txt' => 'Bảo vệ xe cơ giới',
+                            ),
+                            array(
+                                'src' => 'images/baovebanvagiadinh/medical-report1.png',
+                                'txt' => 'Bảo vệ trước bệnh hiểm nghèo',
+                            ),
+                            array(
+                                'src' => 'images/baovebanvagiadinh/tainan.png',
+                                'txt' => 'Bảo vệ trước tai nạn',
+                            ),
+                            array(
+                                'src' => 'images/baovebanvagiadinh/airplane1.png',
+                                'txt' => 'Bảo vệ khi đi du lịch',
+                            ),
+                            array(
+                                'src' => 'images/baovebanvagiadinh/vaccine1.png',
+                                'txt' => 'Bảo vệ trước dịch bệnh',
+                            ),
+                            array(
+                                'src' => 'images/baovebanvagiadinh/best-friend1.png',
+                                'txt' => 'Bảo vệ cho trẻ nhỏ',
+                            ),
+                            array(
+                                'src' => 'images/baovebanvagiadinh/heat.png',
+                                'txt' => 'Bảo vệ cho sức khỏe',
+                            ),
+                            array(
+                                'src' => 'images/baovebanvagiadinh/heat.png',
+                                'txt' => 'Bảo vệ cho sức khỏe',
+                            ),
+                        );
+                        foreach ($data as $k=>$v): ?>
+                            <li class="uk-width-auto home__block02__w7">
+                                <div class="uk-cover-container uk-padding-small home__block02__box">
+                                    <canvas width="142" height="142"></canvas>
+                                    <div class="uk-position-cover uk-padding-small uk-flex uk-flex-column uk-text-center">
+                                        <div class="uk-flex-1 uk-flex uk-flex-middle uk-flex-center">
+                                            <img src="<?= $v['src'] ?>" alt="">
+                                        </div>
+                                        <div class="uk-flex-1 home__block01__txt"><?= $v['txt'] ?></div>
+                                    </div>
+                                </div>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+
+                    <a class="home__slidenav home__slidenav--prev uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="home__slidenav home__slidenav--next uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+                </div>
+                <div class="uk-visible@m" uk-slider="autoplay: true; finite: true;">
 
                     <div class="uk-position-relative">
 
                         <div class="uk-slider-container">
-                            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-6@m uk-grid-small" uk-grid>
+                            <ul class="uk-slider-items uk-child-width-auto uk-grid-small" uk-grid>
                                 <?php
                                 $data = array(
                                     array(
@@ -257,18 +383,79 @@
 </div>
 <!--/Bạn muốn bảo vệ gì hôm nay ?-->
 <!--Tiện ích 24/7-->
-<div class="uk-section uk-background-muted">
-    <div class="uk-container">
+<div class="uk-section home__blockTienich__section uk-background-muted">
+    <div class="uk-container uk-padding-remove">
         <div class="item__32">
             <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Tiện ích 24/7</h2>
         </div>
         <div class="item__32">
-            <div uk-slider>
+            <div class="home__blockTienich__slider uk-hidden@m uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider="finite: true">
+
+                <ul class="uk-slider-items uk-grid uk-grid-small">
+                    <?php
+                    $data = array(
+                        array(
+                            'src' => 'images/baovebanvagiadinh/heat.png',
+                            'txt' => 'Bảo vệ cho sức khỏe',
+                        ),
+                        array(
+                            'src' => 'images/baovebanvagiadinh/xecogioi.png',
+                            'txt' => 'Bảo vệ xe cơ giới',
+                        ),
+                        array(
+                            'src' => 'images/baovebanvagiadinh/medical-report1.png',
+                            'txt' => 'Bảo vệ trước bệnh hiểm nghèo',
+                        ),
+                        array(
+                            'src' => 'images/baovebanvagiadinh/tainan.png',
+                            'txt' => 'Bảo vệ trước tai nạn',
+                        ),
+                        array(
+                            'src' => 'images/baovebanvagiadinh/airplane1.png',
+                            'txt' => 'Bảo vệ khi đi du lịch',
+                        ),
+                        array(
+                            'src' => 'images/baovebanvagiadinh/vaccine1.png',
+                            'txt' => 'Bảo vệ trước dịch bệnh',
+                        ),
+                        array(
+                            'src' => 'images/baovebanvagiadinh/best-friend1.png',
+                            'txt' => 'Bảo vệ cho trẻ nhỏ',
+                        ),
+                        array(
+                            'src' => 'images/baovebanvagiadinh/heat.png',
+                            'txt' => 'Bảo vệ cho sức khỏe',
+                        ),
+                        array(
+                            'src' => 'images/baovebanvagiadinh/heat.png',
+                            'txt' => 'Bảo vệ cho sức khỏe',
+                        ),
+                    );
+                    foreach ($data as $k=>$v): ?>
+                        <li class="uk-width-auto home__block02__w7">
+                            <div class="uk-cover-container uk-padding-small home__block02__box">
+                                <canvas width="142" height="142"></canvas>
+                                <div class="uk-position-cover uk-padding-small uk-flex uk-flex-column uk-text-center">
+                                    <div class="uk-flex-1 uk-flex uk-flex-middle uk-flex-center">
+                                        <img src="<?= $v['src'] ?>" alt="">
+                                    </div>
+                                    <div class="uk-flex-1 home__block01__txt"><?= $v['txt'] ?></div>
+                                </div>
+                            </div>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+
+                <a class="home__slidenav home__slidenav--prev uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="home__slidenav home__slidenav--next uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+            </div>
+            <div class="uk-visible@m" uk-slider="autoplay: true; finite: true;">
 
                 <div class="uk-position-relative">
 
                     <div class="uk-slider-container">
-                        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-6@m uk-grid-small" uk-grid>
+                        <ul class="uk-slider-items uk-child-width-auto uk-grid-small" uk-grid>
                             <?php
                             $data = array(
                                 array(
@@ -351,21 +538,23 @@
                 <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Tin tức về VBI</h2>
             </div>
             <div class="item__32">
-                <div class="uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
-                    <?php for ($i=0;$i<=3;$i++): ?>
-                    <div>
-                        <div class="home__blockNews__card uk-card uk-flex uk-flex-column">
-                            <div class="uk-cover-container">
-                                <img src="https://znews-photo.zingcdn.me/w960/Uploaded/rotntv/2022_04_01/2600x_1_2.jpeg" alt="" uk-cover="">
-                                <canvas width="287" height="166"></canvas>
+                <div class="uk-overflow-auto home__blockNews__overAuto">
+                    <div class="uk-child-width-1-4@m uk-grid-small uk-grid-match home__blockNews__grid" uk-grid uk-toggle="cls: uk-flex-nowrap; mode: media; media: (max-width: 959px)">
+                        <?php for ($i=0;$i<=3;$i++): ?>
+                            <div class="home__blockNews__width">
+                                <div class="home__blockNews__card uk-card uk-flex uk-flex-column">
+                                    <div class="uk-cover-container">
+                                        <img src="https://znews-photo.zingcdn.me/w960/Uploaded/rotntv/2022_04_01/2600x_1_2.jpeg" alt="" uk-cover="">
+                                        <canvas width="287" height="166"></canvas>
+                                    </div>
+                                    <div class="uk-flex-auto uk-padding-small">
+                                        <div class="home__blockNews__card__title"><a href="">VBI Nghệ An Chi Trả 300 Triệu Đồng Bảo Hiểm Người Vay Vốn</a></div>
+                                        <div class="home__blockNews__card__time">09:03 20/01/2022</div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="uk-flex-auto uk-padding-small">
-                                <div class="home__blockNews__card__title"><a href="">VBI Nghệ An Chi Trả 300 Triệu Đồng Bảo Hiểm Người Vay Vốn</a></div>
-                                <div class="home__blockNews__card__time">09:03 20/01/2022</div>
-                            </div>
-                        </div>
+                        <?php endfor; ?>
                     </div>
-                    <?php endfor; ?>
                 </div>
             </div>
             <div class="item__32 uk-text-center">
@@ -377,20 +566,23 @@
                 <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Ưu đãi từ đối tác</h2>
             </div>
             <div class="item__32">
-                <div class="uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
-                    <?php for ($i=0;$i<=3;$i++): ?>
-                        <div>
-                            <div class="home__blockNews__card uk-card uk-flex uk-flex-column">
-                                <div class="uk-cover-container">
-                                    <img src="https://znews-photo.zingcdn.me/w960/Uploaded/rotntv/2022_04_01/2600x_1_2.jpeg" alt="" uk-cover="">
-                                    <canvas width="287" height="166"></canvas>
-                                </div>
-                                <div class="uk-flex-auto uk-padding-small">
-                                    <div class="home__blockNews__card__title"><a href="">VBI Nghệ An Chi Trả 300 Triệu Đồng Bảo Hiểm Người Vay Vốn</a></div>
+                <div class="uk-overflow-auto home__blockNews__overAuto">
+                    <div class="uk-child-width-1-4@m uk-grid-small uk-grid-match home__blockNews__grid" uk-grid uk-toggle="cls: uk-flex-nowrap; mode: media; media: (max-width: 959px)">
+                        <?php for ($i=0;$i<=3;$i++): ?>
+                            <div class="home__blockNews__width">
+                                <div class="home__blockNews__card uk-card uk-flex uk-flex-column">
+                                    <div class="uk-cover-container">
+                                        <img src="https://znews-photo.zingcdn.me/w960/Uploaded/rotntv/2022_04_01/2600x_1_2.jpeg" alt="" uk-cover="">
+                                        <canvas width="287" height="166"></canvas>
+                                    </div>
+                                    <div class="uk-flex-auto uk-padding-small">
+                                        <div class="home__blockNews__card__title"><a href="">VBI Nghệ An Chi Trả 300 Triệu Đồng Bảo Hiểm Người Vay Vốn</a></div>
+                                        <div class="home__blockNews__card__time">09:03 20/01/2022</div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    <?php endfor; ?>
+                        <?php endfor; ?>
+                    </div>
                 </div>
             </div>
             <div class="item__32 uk-text-center">
@@ -400,6 +592,7 @@
     </div>
 </div>
 <!--/Tin tức về VBI-->
+
 <!--Vì sao chọn VBI?-->
 <div class="home__blockVisao__section uk-section uk-background-muted">
     <div class="uk-container">
@@ -407,7 +600,7 @@
             <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Vì sao chọn VBI?</h2>
         </div>
         <div class="item__32">
-            <div class="uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
+            <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
                 <div>
                     <div class="home__blockVisao__box uk-flex uk-flex-column uk-text-center">
                         <div class="item__8 uk-flex-auto uk-flex uk-flex-middle uk-flex-center">

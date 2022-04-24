@@ -75,6 +75,8 @@
   &__#{$x}{
     &:nth-child(n+2){
       margin-top: #{$x}px;
+      .home__blockVisao__section &,
+      .home__blockNews__section &,
       .block_taiapp__gradient &,
       .block_cauhoithuonggap__section &{
         margin-top: 24px;
