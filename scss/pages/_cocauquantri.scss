@@ -17,6 +17,7 @@
           text-transform: inherit;
           color: #596481;
           font-family: $font-Roboto-Medium;
+          @extend .cocauquantri__navbar__navItem;
           @extend .fz-16;
           @include media-breakpoint-up('m'){
             padding: 0 30px;

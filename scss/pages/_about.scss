@@ -134,6 +134,44 @@
       }
       &__box{
         position: relative;
+        &:after{
+          .about__section2__history__column:nth-child(7) &,
+          .about__section2__history__column:nth-child(3) &{
+            @include media-breakpoint-between('s','s'){
+              $x:132px;
+              width: #{$x};
+              height: calc((325*#{$x})/132);
+              display: block;
+              background-image: url("data:image/svg+xml,%3Csvg width='132' height='325' viewBox='0 0 132 325' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 325H13C78.7219 325 132 271.722 132 206V119C132 53.2781 78.7219 0 13 0H0V2H13C77.6173 2 130 54.3827 130 119V206C130 270.617 77.6173 323 13 323H0V325Z' fill='%23DBE0E6'/%3E%3C/svg%3E%0A");
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              bottom: 158px;
+              right: 0;
+              content: "";
+            }
+          }
+          .about__section2__history__column:nth-child(7) &{
+            @include media-breakpoint-between('s','s'){
+              bottom: 198px;
+            }
+          }
+          .about__section2__history__column:nth-child(5) &{
+            @include media-breakpoint-between('s','s'){
+              $x:132px;
+              width: #{$x};
+              height: calc((273*#{$x})/132);
+              display: block;
+              background-image: url("data:image/svg+xml,%3Csvg width='132' height='273' viewBox='0 0 132 273' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M132 273H119C53.2781 273 0 219.722 0 154V119C0 53.2781 53.2781 0 119 0H132V2H119C54.3827 2 2 54.3827 2 119V154C2 218.617 54.3827 271 119 271H132V273Z' fill='%23DBE0E6'/%3E%3C/svg%3E%0A");
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              bottom: 198px;
+              right: calc(100% - 119px);
+              content: "";
+            }
+          }
+        }
         &:before{
           .uk-first-column &{
             opacity: 0;
@@ -148,6 +186,9 @@
               right: 50%;
               top: 52px;
               content: "";
+            }
+            @include media-breakpoint-between('s','s'){
+              width: calc(100% + 30px);
             }
           }
           .about__section2__history__column:last-child &{
