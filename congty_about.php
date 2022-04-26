@@ -164,7 +164,7 @@ require "template-parts/layouts/navbar-menu.php"; ?>
             <div class="about__section2__content__title uk-text-center">Sứ mệnh của VBI</div>
         </div>
         <div class="item__32">
-            <div class="uk-child-width-1-4@m uk-grid-small" uk-grid>
+            <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-small" uk-grid>
                 <?php
                 $data = array(
                     array(
@@ -220,7 +220,7 @@ require "template-parts/layouts/navbar-menu.php"; ?>
             <div class="about__section2__content__title uk-text-center">Tầm nhìn - Giá trị cốt lõi</div>
         </div>
         <div class="item__32">
-            <div class="uk-child-width-1-3@m uk-grid-small" uk-grid>
+            <div class="uk-child-width-1-2@s uk-flex-center uk-child-width-1-3@m uk-grid-small" uk-grid>
                 <?php
                 $data = array(
                     array(
