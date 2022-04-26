@@ -18,7 +18,7 @@ $databreadcrumb = array(
     ),
 );
 require "template-parts/layouts/breadcrumb.php"; ?>
-<div class="about__section1 sanphamdoanhnghiep__bg uk-background-norepeat uk-flex uk-flex-middle uk-background-bottom-center">
+<div class="about__section1 sanphamdoanhnghiep__bg uk-background-norepeat uk-flex uk-background-bottom-center" uk-toggle="cls: uk-flex-middle; mode: media; media: @s">
     <div class="uk-width-1-1 uk-section-xsmall">
         <div class="uk-container">
             <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">Bảo hiểm sức khỏe <br class="uk-visible@m">
