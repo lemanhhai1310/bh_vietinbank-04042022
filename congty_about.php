@@ -85,7 +85,7 @@ require "template-parts/layouts/navbar-menu.php"; ?>
             </div>
             <div class="item__32">
                 <div class="about__section2__history__subtract">
-                    <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-match uk-grid-row-large uk-grid-small uk-grid-75-s uk-grid-15-m" uk-grid>
+                    <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-match uk-grid-row-large" uk-toggle="cls: uk-grid-75-s; mode: media; media: (max-width: 959px)" uk-grid>
                         <?php
                         $data = array(
                             array(
