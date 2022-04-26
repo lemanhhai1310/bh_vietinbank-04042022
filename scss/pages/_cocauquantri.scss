@@ -13,6 +13,7 @@
     .uk-navbar-nav{
       >li{
         >a{
+          white-space: nowrap;
           text-transform: inherit;
           color: #596481;
           font-family: $font-Roboto-Medium;
