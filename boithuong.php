@@ -52,7 +52,7 @@ require "template-parts/layouts/breadcrumb.php"; ?>
             </div>
         </div>
         <div class="item__40">
-            <div class="uk-child-width-1-3@m uk-grid-18-m" uk-grid>
+            <div class="uk-child-width-1-2@s uk-flex-center uk-grid-small uk-child-width-1-3@m uk-grid-18-m" uk-grid>
                 <?php
                 $data = array(
                     array(
@@ -95,7 +95,7 @@ require "template-parts/layouts/breadcrumb.php"; ?>
             <h2 class="uk-h2 uk-text-center block_cauhoithuonggap__title">3 bước khai báo bồi thường</h2>
         </div>
         <div class="item__32">
-            <div class="uk-child-width-1-3@m uk-grid-116-m" uk-grid>
+            <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-116-m uk-grid-small uk-flex-center" uk-grid>
                 <?php
                 $data = array(
                     array(
