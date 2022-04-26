@@ -62,7 +62,7 @@ require "template-parts/layouts/breadcrumb.php"; ?>
         </div>
         <div class="item__32">
             <div class="item__52">
-                <div class="uk-child-width-1-3@m uk-grid-row-medium uk-grid-small uk-flex-center" uk-grid>
+                <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-row-medium uk-grid-small uk-flex-center" uk-grid>
                     <?php
                     $data = array(
                         array(
@@ -112,7 +112,7 @@ require "template-parts/layouts/breadcrumb.php"; ?>
 <!--/Điểm ưu việt của sản phẩm này là gì?-->
 
 <!--VBI luôn sẵn sàng giải thích và tư vấn cho bạn-->
-<div class="uk-section sanphamdoanhnghiep__luonsansang__section">
+<div class="uk-section sanphamdoanhnghiep__luonsansang__section uk-background-image@m">
     <div class="uk-container">
         <div class="item__32">
             <div class="item__14">
@@ -141,6 +141,9 @@ require "template-parts/layouts/breadcrumb.php"; ?>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="item__32 uk-text-center uk-visible@s uk-hidden@m">
+            <img src="images/sanphamdoanhnghiep/vbi_luon_san_sang_img.png" alt="">
         </div>
     </div>
 </div>

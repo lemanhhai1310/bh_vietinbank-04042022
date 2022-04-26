@@ -3,10 +3,12 @@
     $x:10px;
     padding-top: #{$x};
     padding-bottom: #{$x};
+    background-color: #fff;
     @include media-breakpoint-up('m'){
       $x:12px;
       padding-top: #{$x};
       padding-bottom: #{$x};
+      background-color: transparent;
     }
     &::-webkit-scrollbar{
       display: none;
